@@ -13,7 +13,7 @@ export const Validation = () => {
             if (storedUsername) {
                 try {
                     setUsername(storedUsername);
-                    const response = await axios.get(`http://localhost:3000/user/getUserByUsername?username=${storedUsername}`);
+                    const response = await axios.get(`https://englix-server-q8atff73o-fathihprs-projects.vercel.app//user/getUserByUsername?username=${storedUsername}`);
                     setUserId(response.data._id);
                 } catch (error) {
                     console.error("Error fetching user data", error);

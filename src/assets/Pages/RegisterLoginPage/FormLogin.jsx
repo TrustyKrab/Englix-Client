@@ -16,7 +16,7 @@ export default function FormLogin() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3000/user/login', { email, password, })
+        axios.post('https://englix-server-q8atff73o-fathihprs-projects.vercel.app//user/login', { email, password, })
             .then(response => {
                 const username = jwtDecode(response.data.token)
                 localStorage.setItem("username", username.username)
