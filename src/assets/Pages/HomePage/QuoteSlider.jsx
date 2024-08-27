@@ -4,11 +4,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const data = [
-    { img: '/public/carouImg1.png' },
-    { img: '/public/carouImg2.png' },
-    { img: '/public/carouImg3.png' },
-    { img: '/public/carouImg4.png' },
-    { img: '/public/carouImg5.png' },
+    { img: 'carouImg1.png' },
+    { img: 'carouImg2.png' },
+    { img: 'carouImg3.png' },
+    { img: 'carouImg4.png' },
+    { img: 'carouImg5.png' },
 ];
 
 
