@@ -11,7 +11,7 @@ const AdminLogin = () => {
     axios.defaults.withCredentials = true
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('https://englix-server-q8atff73o-fathihprs-projects.vercel.app//admin/loginAdmin', {
+        axios.post('https://englix-server.vercel.app/admin/loginAdmin', {
             username, password
         })
             .then(response => {

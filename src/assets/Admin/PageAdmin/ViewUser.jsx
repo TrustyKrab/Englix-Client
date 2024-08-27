@@ -16,7 +16,7 @@ const ViewUser = () => {
     }, [])
 
     const getUserByID = async () => {
-        const response = await axios.get(`https://englix-server-q8atff73o-fathihprs-projects.vercel.app//user/${id}/getUserByID`)
+        const response = await axios.get(`https://englix-server.vercel.app/user/${id}/getUserByID`)
         setEmail(response.data.email)
         setUsername(response.data.username)
         setPassword(response.data.password)

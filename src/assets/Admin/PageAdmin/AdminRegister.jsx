@@ -10,7 +10,7 @@ const AdminRegister = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('https://englix-server-q8atff73o-fathihprs-projects.vercel.app//admin/registerAdmin', {
+        axios.post('https://englix-server.vercel.app/admin/registerAdmin', {
             username, password
         })
             .then(response => {
