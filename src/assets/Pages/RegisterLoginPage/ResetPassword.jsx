@@ -1,6 +1,7 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
 import axios from 'axios';
+import toast from 'react-hot-toast';
 
 const ResetPassword = () => {
     const [password, setPassword] = useState('');
@@ -10,8 +11,8 @@ const ResetPassword = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const resoonse = await toast.promise(
-                axios.post('https://englix-client.vercel.app/api/auth/ResetPassword', { password, token }),
+            const response = await toast.promise(
+                axios.post('/api/resetpassword', { password, token }),
                 {
                     pending: 'Loading...',
                     success: 'Password di ubah!',
@@ -36,11 +37,11 @@ const ResetPassword = () => {
                     <form onSubmit={handleSubmit} className="mb-3">
 
                         <label
-                            htmlFor="email" className="block  text-gray-700 text-sm font-bold mb-2"> Email</label>
+                            htmlFor="password" className="block  text-gray-700 text-sm font-bold mb-2"> Password Baru</label>
                         <input
-                            type="email"
-                            name="email"
-                            id="email"
+                            type="password"
+                            name="password"
+                            id="password"
                             placeholder=""
                             onChange={(e) => setPassword(e.target.value)}
                             className="border-2 mb-3 border-slate-200 rounded w-full py-2 px-3 text-gray-700 focus:outline-slate-500 focus:shadow-outline"

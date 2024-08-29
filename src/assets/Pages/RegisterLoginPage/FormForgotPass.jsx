@@ -1,17 +1,17 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from 'axios';
+import toast from 'react-hot-toast';
 
 export default function FormForgotPass() {
     const [email, setEmail] = useState('');
     const navigate = useNavigate();
 
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             const response = await toast.promise(
-                axios.post('https://englix-client.vercel.app/api/auth/FormForgotPass', { email }),
+                axios.post('/api/forgotpassword', { email }),
                 { pending: 'Loading in...', success: 'Silahkan cek email untuk melakukan reset password', error: 'Failed to log in' }
             )
             setTimeout(() => {
@@ -25,7 +25,6 @@ export default function FormForgotPass() {
             }
         }
     }
-
 
     return (
         <div className="flex flex-wrap justify-center bg-indigo-300 h-[100vh] font-main">
