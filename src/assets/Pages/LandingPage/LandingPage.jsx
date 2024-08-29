@@ -25,13 +25,13 @@ function LandingPage() {
         },
     ];
     return (
-        <>
+        <div className="font-main">
             {/* Start navbar */}
             <nav
                 data-aos="fade-down"
                 className=" top-0 w-full z-50 bg-indigo-500 py-4 sm:py-0 fixed bg-opacity-80"
             >
-                <div className="mx-10 py-2">
+                <div className="mx-10 py-2 font-main">
                     <div className="flex justify-between items-center w-full">
                         <div className="flex items-center text-white font-bold text-2xl">
                             <img src="logoNoBackground.png" className="w-36"></img>
@@ -197,7 +197,7 @@ function LandingPage() {
                 </div>
             </footer>
             {/* akhir footer */}
-        </>
+        </div>
 
 
     )

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import LandingPage from './assets/Pages/LandingPage/LandingPage'
 import FormLogin from './assets/Pages/RegisterLoginPage/FormLogin'
 import FormRegister from './assets/Pages/RegisterLoginPage/FormRegister'
+import FormForgotPass from './assets/Pages/RegisterLoginPage/FormForgotPass'
 import HomePage from './assets/Pages/HomePage/HomePage'
 
 import Kelas10Page from './assets/Pages/Kelas10Page/Kelas10Page'
@@ -73,6 +74,8 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/FormLogin" element={<FormLogin />} />
         <Route path="/FormRegister" element={<FormRegister />} />
+        <Route path='/FormForgotPass' element={<FormForgotPass />} />
+        <Route path='/LandingPage' element={<LandingPage />} />
         {/* setelah login */}
         <Route path="/HomePage" element={<HomePage />} />
         <Route path="/HomePage/Profile/:id" element={<ProfilePage />} />

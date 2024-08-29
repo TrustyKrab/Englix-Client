@@ -33,12 +33,12 @@ export default function FormLogin() {
     }
 
     return (
-        <div className="flex flex-wrap justify-center px-20 bg-indigo-300 h-full">
+        <div className="flex flex-wrap justify-center px-20 bg-indigo-300 h-full font-main">
             <div className="w-2/5 border-2 rounded-3xl px-5 bg-white my-10">
                 <div className="flex justify-center w-full my-10">
                     <img src="logo-black.png" className="justify-center w-52"></img>
                 </div>
-                <div className="mb-20">
+                <div className="mb-14">
                     <h1 className="text-center">SELAMAT DATANG KEMBALI</h1>
                 </div>
                 <form onSubmit={handleSubmit} className="mb-12">
@@ -66,9 +66,18 @@ export default function FormLogin() {
                         className="border-2 mb-12 border-slate-200 rounded w-full py-2 px-3 text-gray-700 focus:outline-slate-500 focus:shadow-outline"
                         required
                     />
-
-                    <div className="text-center">
-                        <button type="submit" className="py-2 px-4 rounded-lg text-white hover:bg-blue-500 hover:scale-105 transition duration-200 drop-shadow-2xl bg-pink-500">Masuk</button>
+                    <Link to="/FormForgotPass">
+                        <div className='w-auto flex text-right justify-end -mt-12 mb-12'>
+                            <h1 className='text-sm hover:underline hover:opacity-85 opacity-50'>Lupa Password?</h1>
+                        </div>
+                    </Link>
+                    <div className="text-center mb-5">
+                        <button type="submit" className="py-2 px-4 rounded-lg text-white hover:bg-blue-500 hover:scale-105 transition duration-200 drop-shadow-2xl bg-pink-500">MASUK</button>
+                    </div>
+                    <div className='flex text-center justify-center'>
+                        <Link to='/LandingPage'>
+                            <h1 className='hover:underline'>kembali</h1>
+                        </Link>
                     </div>
                 </form>
 
