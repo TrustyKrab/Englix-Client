@@ -128,7 +128,7 @@ function LandingPage() {
                             <img src="logoNew.png" className="w-"></img>
                         </div>
 
-                        {/* Sosial Media */}
+                        {/* Link Kelas */}
                         <div className="w-full px-4 mb-12 text-slate-300 font-medium text-lg md:w-1/3">
                             <h2 className="font-bold text-2xl text-white mb-4">Materi</h2>
                             <ul>
@@ -146,6 +146,7 @@ function LandingPage() {
                                 </li>
                             </ul>
                         </div>
+                        {/* Akhir Link Kelas */}
 
                         {/* Links */}
                         <div className="w-full px-4 mb-12 text-slate-300 font-medium text-lg md:w-1/3">
@@ -176,7 +177,9 @@ function LandingPage() {
                             </ul>
                         </div>
                     </div>
-                    {/* footer */}
+                    {/* akhir Links */}
+
+                    {/* Sosmed */}
                     <div className="w-full pt-10 border-t-2 border-pink-500 ">
                         <div className="flex items-center justify-center mb-5">
                             {/* instagram */}
@@ -194,12 +197,11 @@ function LandingPage() {
                         </div>
                         <p className="font-medium text-slate-300 text-center text-xs">Dibuat dengan 💗 oleh Fathih Pradipta Arya PH😘</p>
                     </div>
+                    {/* akhir Sosmed */}
                 </div>
             </footer>
             {/* akhir footer */}
         </div>
-
-
     )
 }
 

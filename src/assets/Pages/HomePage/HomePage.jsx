@@ -3,7 +3,6 @@ import NavbarHome from "../../Layout/Navbar/NavbarHome";
 import QuoteSlider from "./QuoteSlider";
 import PilihKelas from "./PilihKelas";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 import { Validation } from "../PageController/Validation";
 
 function Homepage() {

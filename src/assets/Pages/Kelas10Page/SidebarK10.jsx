@@ -16,19 +16,43 @@ export default function SidebarK10() {
     const coba = [
         { judul: "introduction", component: MainPageK10 },
 
-        { judul: "Basic English in Introduction", url: "https://www.youtube.com/embed/WADirgJdrmc?si=vJHpY2Ex3lietrKT", description1: 'Video ini menjelaskan tentang "Basic English in Introduction"', description2: 'Pada video materi ini diharapkan siswa dapat memahami dan memiliki keterampilan dalam konsep dalam Bahasa Inggris. Dan dapat memberikan pondasi untuk memahami, berbicara, membaca dan menulis dalam Bahasa Inggris.', description3: 'Pada video materi ini membahas mengenai Pengertian dan elemen-elemen dasar pada Bahasa Inggris. Seperti Greetings, Introduction Yourself, Asking for Personal Information, Basic Responses dan Common Phrases. Dan juga membahas tentang struktur pada Basic Sentences.' },
+        {
+            judul: "Basic English in Introduction",
+            url: "https://www.youtube.com/embed/WADirgJdrmc?si=vJHpY2Ex3lietrKT",
+            description1: 'Video ini menjelaskan tentang "Basic English in Introduction".',
+            description2: 'Pada video materi ini membahas mengenai Pengertian dan elemen-elemen dasar pada Bahasa Inggris. Seperti Greetings, Introduction Yourself, Asking for Personal Information, Basic Responses dan Common Phrases. Dan juga membahas tentang struktur pada Basic Sentences.',
+            description3: 'Pada video materi "Basic English in Introduction" ini diharapkan siswa dapat memahami dan memiliki keterampilan dalam konsep dalam Bahasa Inggris dan dapat memberikan pondasi untuk memahami, berbicara, membaca dan menulis dalam Bahasa Inggris.',
+        },
 
         { judul: "Quiz Basic English in Introduction", component: KuisM1K10 },
 
-        { judul: "Common Expressions", url: "https://www.youtube.com/embed/W0WSj_Azyxg?si=erye6uN5eF5c0v3n", description1: "Discover common expressions used in everyday conversations", description2: 'text', description3: 'ohiya' },
+        {
+            judul: "Common Expressions",
+            url: "https://www.youtube.com/embed/W0WSj_Azyxg?si=erye6uN5eF5c0v3n",
+            description1: 'Video ini menjelaskan tentang "Common Expression".',
+            description2: 'Pada video ini menjelaskan tentang apa saja yang akan di pelajari di dalam materi dan memberikan contohnya "Common Expressions" seperti Greetins, Asking How Someone Is, Responding To How are You, Introducing Yourself, Saying Goodbye, Apologizing, Thanking, Asking for Help, Giving Directions, Making Requests',
+            description3: 'Di harapkan setelah menonton video materi "Common Expression" ini, siswa dapat memahami dan memiliki keterampilan dalam bahasa Inggris.'
+        },
 
         { judul: "Quiz Common Expressions", component: KuisM2K10 },
 
-        { judul: "Past tense", url: "https://www.youtube.com/embed/yNsNbkqeow0?si=WTmD4VqfYZvWZQZ7", description1: "Understand the concept of past tense in English grammar", description2: '', description3: '' },
+        {
+            judul: "Past tense",
+            url: "https://www.youtube.com/embed/yNsNbkqeow0?si=WTmD4VqfYZvWZQZ7",
+            description1: 'Video ini menjelaskan tentang "Past Tense".',
+            description2: 'Pada video ini membahas tentang pengertian dan jenis-jenis Past Tense, fungsi, bentuk dan contoh dari jenis-jenis Past Tense',
+            description3: ' Diharapkan video ini bisa membantumu memahami konsep "Past Tense" dengan lebih baik dan memudahkanmu dalam belajar bahasa Inggris.'
+        },
 
         { judul: "Quiz Past tense", component: KuisM3K10 },
 
-        { judul: "Announcement", url: "https://www.youtube.com/embed/83inl1XnW-I?si=Cgk5geyZ9ohZUOH7", description1: "Learn how to make announcements in English", description2: '', description3: '' },
+        {
+            judul: "Announcement",
+            url: "https://www.youtube.com/embed/83inl1XnW-I?si=Cgk5geyZ9ohZUOH7",
+            description1: 'Video ini membahas tentang "Announcement".',
+            description2: 'Pada video ini membahas mengenai pengertian, struktur dan contoh dari "Announcement"',
+            description3: 'setelah ini di harapkan siswa dapat mengerti dan memahami struktur tentang "Announcement" dan dapat membuat dan mengidentifikasinya.'
+        },
 
         { judul: "Quiz Announcement", component: KuisM4K10 },
     ];

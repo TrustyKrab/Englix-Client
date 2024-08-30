@@ -60,7 +60,6 @@ export default function PilGanLatMudah() {
         }
     };
 
-
     const reset = () => {
         setIndex(0);
         setQuestion(dataLatihanMudah[0]);
@@ -105,6 +104,7 @@ export default function PilGanLatMudah() {
                                 <div className="index text-sm">{index + 1} of {dataLatihanMudah.length} questions</div>
                             </div>
                         </>}
+
                         {result ? (
                             <div className="text-center">
                                 <h1 className="font-bold text-8xl mb-10">{Math.round(score / dataLatihanMudah.length * 100)}</h1>

@@ -3,29 +3,45 @@ import { useState } from "react";
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
-const ResetPassword = () => {
-    const [password, setPassword] = useState('');
+export default function ResetPassword() {
+    const [password, setPassword] = useState("");
+    const [errors, setErrors] = useState({});
     const { token } = useParams();
     const navigate = useNavigate();
 
+    const validateForm = () => {
+        const newErrors = {};
+        if (password.length < 6) {
+            newErrors.password = "Password minimal 6 karakter";
+        }
+        return newErrors;
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-        try {
-            const response = await toast.promise(
-                axios.post('/api/resetpassword', { password, token }),
-                {
-                    pending: 'Loading...',
-                    success: 'Password di ubah!',
-                    error: 'Failed to Reset Password'
-                }
-            )
-            setTimeout(() => {
-                navigate("/login")
-            }, 2000)
-        } catch (error) {
-            toast.error(error)
+        const formErrors = validateForm();
+        if (Object.keys(formErrors).length > 0) {
+            setErrors(formErrors);
+            return;
         }
-    }
+        try {
+            const response = await axios.post(
+                "https://englix-server.vercel.app/user/reset-password",
+                {
+                    password,
+                    token,
+                }
+            );
+            console.log(response);
+            alert("Password berhasil diubah!");
+            setTimeout(() => {
+                navigate("/login");
+            }, 2000);
+        } catch (error) {
+            console.error(error);
+            alert("Gagal mengubah password");
+        }
+    };
 
     return (
         <>
@@ -56,5 +72,3 @@ const ResetPassword = () => {
         </>
     )
 }
-
-export default ResetPassword;

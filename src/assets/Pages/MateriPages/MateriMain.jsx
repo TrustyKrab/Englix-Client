@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 
 export default function MateriMain() {
 
-
     return (
         <div className=' bg-blue-100 font-main'>
             <div>
@@ -17,6 +16,7 @@ export default function MateriMain() {
                     <div className='flex justify-center my-10'>
                         <h1 className='font-bold text-2xl'>Pilih Materi Berdasarkan Kelas</h1>
                     </div>
+
                     {/* kelas 10 */}
                     <div className="mx-32 pt-7 px-4 rounded-xl bg-pink-400 drop-shadow-2xl shadow-2xl">
                         <h1 className="mb-2 mx-2 font-semibold text-white">Materi Kelas 10 :</h1>

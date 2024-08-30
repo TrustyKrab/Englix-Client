@@ -1,31 +1,38 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from 'axios';
-import toast from 'react-hot-toast';
+// import toast from 'react-hot-toast';
 
 export default function FormForgotPass() {
-    const [email, setEmail] = useState('');
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm();
     const navigate = useNavigate();
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            const response = await toast.promise(
-                axios.post('/api/forgotpassword', { email }),
-                { pending: 'Loading in...', success: 'Silahkan cek email untuk melakukan reset password', error: 'Failed to log in' }
+    const onSubmit = (data) => {
+        axios
+            .post(
+                "https://englix-server.vercel.app/user/forgot-password",
+                data
             )
-            setTimeout(() => {
-                navigate("/login")
-            }, 2000)
-        } catch (err) {
-            if (err.response && err.response.status === 404) {
-                toast.error("Email not found")
-            } else {
-                toast.error(err)
-            }
-        }
-    }
-
+            .then((response) => {
+                if (response.data.status) {
+                    alert("Check your email to reset your password link");
+                    window.open("https://mail.google.com/", "_blank");
+                    setTimeout(() => {
+                        navigate("/login");
+                    }, 5000);
+                } else {
+                    alert(response.data.message || "Error sending email");
+                }
+            })
+            .catch((err) => {
+                console.log(err);
+                alert("Terjadi kesalahan, coba lagi nanti");
+            });
+    };
     return (
         <div className="flex flex-wrap justify-center bg-indigo-300 h-[100vh] font-main">
             <div className="w-2/5 border-2 rounded-2xl px-6 bg-white my-40 py-5">
@@ -33,7 +40,7 @@ export default function FormForgotPass() {
                     <h1 className="text-center text-lg font-semibold">Masukan E-mail anda.</h1>
                     <h1 className='text-center'>Dan kami akan mengirimkan Link agar anda bisa masuk kembali ke akun anda.</h1>
                 </div>
-                <form onSubmit={handleSubmit} className="mb-3">
+                <form onSubmit={handleSubmit(onSubmit)} className="mb-3">
 
                     <label
                         htmlFor="email"
@@ -44,7 +51,7 @@ export default function FormForgotPass() {
                         id="email"
                         value={email}
                         placeholder=""
-                        onChange={(e) => setEmail(e.target.value)}
+                        {...register("email", { required: true })}
                         className="border-2 mb-3 border-slate-200 rounded w-full py-2 px-3 text-gray-700 focus:outline-slate-500 focus:shadow-outline"
                         required
                     />

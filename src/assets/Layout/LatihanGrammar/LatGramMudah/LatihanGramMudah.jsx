@@ -104,6 +104,7 @@ export default function LatihanGramMudah() {
                                 <div className="index text-sm">{index + 1} of {DataLatGramMud.length} questions</div>
                             </div>
                         </>}
+
                         {result ? (
                             <div className="text-center">
                                 <h1 className="font-bold text-8xl mb-10">{Math.round(score / DataLatGramMud.length * 100)}</h1>

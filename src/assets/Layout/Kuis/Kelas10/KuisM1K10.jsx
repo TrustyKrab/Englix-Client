@@ -105,6 +105,7 @@ export default function KuisM1K10() {
                             <div className="index text-sm">{index + 1} of {dataM1K10.length} questions</div>
                         </div>
                     </>}
+
                     {result ? (
                         <div className="text-center">
                             <h1 className="font-bold text-8xl mb-10">{Math.round(score / dataM1K10.length * 100)}</h1>

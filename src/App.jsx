@@ -78,7 +78,7 @@ function App() {
         <Route path='/LandingPage' element={<LandingPage />} />
         {/* setelah login */}
         <Route path="/HomePage" element={<HomePage />} />
-        <Route path="/HomePage/Profile/:id" element={<ProfilePage />} />
+        <Route path="/HomePage/Profile/" element={<ProfilePage />} />
 
         {/* Kelas Page */}
         <Route path="/Kelas10Page" element={<Kelas10Page />} />
