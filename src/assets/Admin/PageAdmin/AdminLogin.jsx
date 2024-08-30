@@ -29,6 +29,7 @@ const AdminLogin = () => {
                 console.log(err)
             })
     }
+
     return (
         <>
             <section>
@@ -66,5 +67,4 @@ const AdminLogin = () => {
         </>
     )
 }
-
 export default AdminLogin
