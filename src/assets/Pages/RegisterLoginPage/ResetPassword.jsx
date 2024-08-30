@@ -1,47 +1,33 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
 import axios from 'axios';
-import toast from 'react-hot-toast';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export default function ResetPassword() {
-    const [password, setPassword] = useState("");
-    const [errors, setErrors] = useState({});
+    const [password, setPassword] = useState('');
     const { token } = useParams();
     const navigate = useNavigate();
 
-    const validateForm = () => {
-        const newErrors = {};
-        if (password.length < 6) {
-            newErrors.password = "Password minimal 6 karakter";
-        }
-        return newErrors;
-    };
-
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const formErrors = validateForm();
-        if (Object.keys(formErrors).length > 0) {
-            setErrors(formErrors);
-            return;
-        }
         try {
-            const response = await axios.post(
-                "https://englix-server.vercel.app/user/reset-password",
+            const resoonse = await toast.promise(
+                axios.post('https://englix-server.vercel.app/user/resetpassword', { password, token }),
                 {
-                    password,
-                    token,
+                    pending: 'Loading...',
+                    success: 'Password di ubah!',
+                    error: 'Failed to Reset Password'
                 }
-            );
-            console.log(response);
-            alert("Password berhasil diubah!");
+            )
             setTimeout(() => {
-                navigate("/login");
-            }, 2000);
+                navigate("/login")
+            }, 2000)
         } catch (error) {
-            console.error(error);
-            alert("Gagal mengubah password");
+            toast.error(error)
         }
-    };
+    }
 
     return (
         <>
