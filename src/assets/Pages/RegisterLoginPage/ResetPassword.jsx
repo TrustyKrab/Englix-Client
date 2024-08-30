@@ -49,7 +49,7 @@ export default function ResetPassword() {
                         />
                     </form>
                     <div className='justify-center flex mb-5'>
-                        <button className='bg-pink-500 text-white text-base rounded-lg py-2 px-3'>KIRIM LINK</button>
+                        <button type="submit" className='bg-pink-500 text-white text-base rounded-lg py-2 px-3'>KIRIM LINK</button>
                     </div>
                 </div>
             </div>
