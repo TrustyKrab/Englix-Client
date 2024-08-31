@@ -8,7 +8,7 @@ export default function FormForgotPass() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        axios.post('https://englix-server.vercel.app/user/forgotpassword', { email })
+        await axios.post('https://englix-server.vercel.app/user/forgotpassword', { email })
             .then(response => {
                 alert("Berhasil Mengirim E-Mail");
                 navigate('/FormLogin');
