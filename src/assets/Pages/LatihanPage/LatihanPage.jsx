@@ -19,7 +19,7 @@ export default function LatihanPage() {
                         <div className="flex flex-wrap justify-center mt-4">
                             <div className="px-2 lg:w-1/2 xl:w-1/4">
                                 <Link to="/latihanMudah1">
-                                    <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
+                                    <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex'>
                                             <img src="easy.jpeg" alt="" width="full" className="rounded-xl" />
                                         </div>
