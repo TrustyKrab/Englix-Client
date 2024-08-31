@@ -10,15 +10,17 @@ export default function FormForgotPass() {
         e.preventDefault();
         await axios.post('https://englix-server.vercel.app/user/forgotpassword', { email })
             .then(response => {
-                alert("Berhasil Mengirim E-Mail");
-                navigate('/FormLogin');
-            }).catch(err => {
-                if (err.response && err.response.data.message) {
-                    alert(err.response.data.message);
+                if (response.data.status) {
+                    alert("Check your email to reset your password link");
+                    setTimeout(() => {
+                        navigate("/FormLogin");
+                    }, 5000);
                 } else {
-                    alert("Terjadi kesalahan saat login");
+                    alert(response.data.message || "Error sending email");
                 }
-                console.log(err)
+            }).catch(err => {
+                console.log(err);
+                alert("Terjadi kesalahan, coba lagi nanti");
             });
     }
 
