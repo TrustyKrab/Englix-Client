@@ -21,7 +21,7 @@ export default function LatihanPage() {
                                 <Link to="/latihanMudah1">
                                     <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex'>
-                                            <img src="easy.jpeg" alt="" width="100px" className="rounded-xl" />
+                                            <img src="easy.jpeg" alt="" width="full" height="100px" className="rounded-xl" />
                                         </div>
                                     </div>
                                 </Link>
