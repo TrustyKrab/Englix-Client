@@ -141,15 +141,15 @@ function LandingPage() {
                             <h2 className="font-bold text-2xl text-white mb-4">Materi</h2>
                             <ul>
                                 <li className="mb-2">
-                                    <a href="#" className="text-slate-200 hover:text-pink-500">Kelas 10
+                                    <a href="/FormLogin" className="text-slate-200 hover:text-pink-500">Kelas 10
                                     </a>
                                 </li>
                                 <li className="mb-2">
-                                    <a href="#" className="text-slate-200 hover:text-pink-500">Kelas 11
+                                    <a href="/FormLogin" className="text-slate-200 hover:text-pink-500">Kelas 11
                                     </a>
                                 </li>
                                 <li className="mb-2">
-                                    <a href="#" className="text-slate-200 hover:text-pink-500">Kelas 12
+                                    <a href="/FormLogin" className="text-slate-200 hover:text-pink-500">Kelas 12
                                     </a>
                                 </li>
                             </ul>
