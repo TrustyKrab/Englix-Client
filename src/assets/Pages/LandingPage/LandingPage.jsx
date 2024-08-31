@@ -34,7 +34,15 @@ function LandingPage() {
                 <div className="mx-10 py-2 font-main">
                     <div className="flex justify-between items-center w-full">
                         <div className="flex items-center text-white font-bold text-2xl">
-                            <img src="logoNoBackground.png" className="w-36"></img>
+                            <img
+                                src="logoNoBackground.png"
+                                className="w-36"
+                                onClick={() => {
+                                    // kode untuk berpindah ke sesi hero
+                                    window.location.href = "#hero"
+                                }}
+                            >
+                            </img>
                         </div>
                         <div className="text-white pr-[65vh] hidden sm:block">
                             <ul className="flex items-center ml-32 gap-6 text-lg py-4 ">
@@ -201,7 +209,7 @@ function LandingPage() {
                 </div>
             </footer>
             {/* akhir footer */}
-        </div>
+        </div >
     )
 }
 
