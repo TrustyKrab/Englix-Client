@@ -189,11 +189,11 @@ function LandingPage() {
                             <h2 className="font-bold text-2xl text-white mb-4">Kontak Kami</h2>
                             <ul>
                                 <li className="mb-2">
-                                    <a href="#" className="text-slate-200 hover:text-pink-500">fathihpra6303@gmail.com
+                                    <a className="text-slate-200 hover:text-pink-500">fathihpra6303@gmail.com
                                     </a>
                                 </li>
                                 <li className="mb-2">
-                                    <a href="#" className="text-slate-200 hover:text-pink-500">+62 88210943372
+                                    <a className="text-slate-200 hover:text-pink-500">+62 882 1094 3372
                                     </a>
                                 </li>
                             </ul>
