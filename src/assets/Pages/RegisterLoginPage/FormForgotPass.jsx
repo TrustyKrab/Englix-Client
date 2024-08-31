@@ -46,10 +46,10 @@ export default function FormForgotPass() {
                         className="border-2 mb-3 border-slate-200 rounded w-full py-2 px-3 text-gray-700 focus:outline-slate-500 focus:shadow-outline"
                         required
                     />
+                    <div className='justify-center flex mb-5'>
+                        <button type="submit" className='bg-pink-500 text-white text-base rounded-lg py-2 px-3'>KIRIM LINK</button>
+                    </div>
                 </form>
-                <div className='justify-center flex mb-5'>
-                    <button type="submit" className='bg-pink-500 text-white text-base rounded-lg py-2 px-3'>KIRIM LINK</button>
-                </div>
                 <div className='flex text-center justify-center'>
                     <Link to='/FormLogin'>
                         <h1 className='hover:underline'>kembali</h1>
