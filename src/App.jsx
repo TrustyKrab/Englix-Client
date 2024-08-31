@@ -65,6 +65,7 @@ import ViewUser from './assets/Admin/PageAdmin/ViewUser';
 import AdminLogin from './assets/Admin/PageAdmin/AdminLogin';
 import AdminRegister from './assets/Admin/PageAdmin/AdminRegister'
 import MateriM4K12 from './assets/Layout/Materi/Kelas12/MateriM4K12'
+import ResetPassword from './assets/Pages/RegisterLoginPage/ResetPassword'
 
 function App() {
   return (
@@ -75,6 +76,7 @@ function App() {
         <Route path="/FormLogin" element={<FormLogin />} />
         <Route path="/FormRegister" element={<FormRegister />} />
         <Route path='/FormForgotPass' element={<FormForgotPass />} />
+        <Route path="/ResetPassword" element={<ResetPassword />} />
         <Route path='/LandingPage' element={<LandingPage />} />
         {/* setelah login */}
         <Route path="/HomePage" element={<HomePage />} />
