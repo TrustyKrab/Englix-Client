@@ -29,7 +29,7 @@ export default function LatihanPage() {
 
                             <div className="px-2 lg:w-1/2 xl:w-1/4">
                                 <Link to="/LatihanMenengah">
-                                    <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
+                                    <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex '>
                                             <img src="medium.jpeg" alt="" width="w-full" className="rounded-xl" />
                                         </div>
@@ -39,7 +39,7 @@ export default function LatihanPage() {
 
                             <div className="px-2 lg:w-1/2 xl:w-1/4">
                                 <Link to="/LatihanSulit">
-                                    <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
+                                    <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex '>
                                             <img src="hard.jpeg" alt="" width="w-full" className="rounded-xl" />
                                         </div>
@@ -56,7 +56,7 @@ export default function LatihanPage() {
                         <div className="flex flex-wrap justify-center mt-4">
                             <div className="px-2 lg:w-1/2 xl:w-1/4">
                                 <Link to="/StartMudLatGram">
-                                    <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
+                                    <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex '>
                                             <img src="easy.jpeg" alt="" width="w-full" className="rounded-xl" />
                                         </div>
@@ -66,7 +66,7 @@ export default function LatihanPage() {
 
                             <div className="px-2 lg:w-1/2 xl:w-1/4">
                                 <Link to="/StartMenLatGram">
-                                    <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
+                                    <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex '>
                                             <img src="medium.jpeg" alt="" width="w-full" className="rounded-xl" />
                                         </div>
@@ -76,7 +76,7 @@ export default function LatihanPage() {
 
                             <div className="px-2 lg:w-1/2 xl:w-1/4">
                                 <Link to="/StartSulLatGram">
-                                    <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
+                                    <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex '>
                                             <img src="hard.jpeg" alt="" width="w-full" className="rounded-xl" />
                                         </div>
