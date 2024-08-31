@@ -184,8 +184,21 @@ function LandingPage() {
                                 </li>
                             </ul>
                         </div>
+                        {/* akhir Links */}
+                        <div className="w-full px-4 mb-12 text-slate-300 font-medium text-lg md:w-1/3">
+                            <h2 className="font-bold text-2xl text-white mb-4">Materi</h2>
+                            <ul>
+                                <li className="mb-2">
+                                    <a href="#" className="text-slate-200 hover:text-pink-500">fathihpra6303@gmail.com
+                                    </a>
+                                </li>
+                                <li className="mb-2">
+                                    <a href="#" className="text-slate-200 hover:text-pink-500">+62 88210943372
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    {/* akhir Links */}
 
                     {/* Sosmed */}
                     <div className="w-full pt-10 border-t-2 border-pink-500 ">
