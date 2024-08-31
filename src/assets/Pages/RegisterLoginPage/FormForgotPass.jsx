@@ -8,21 +8,18 @@ export default function FormForgotPass() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        try {
-            const response = await toast.promise(
-                axios.post('https://englix-server.vercel.app/user/forgotpassword', { email }),
-                { pending: 'Loading in...', success: 'Silahkan cek email untuk melakukan reset password', error: 'Failed to log in' }
-            )
-            setTimeout(() => {
-                navigate("/login")
-            }, 2000)
-        } catch (err) {
-            if (err.response && err.response.status === 404) {
-                toast.error("Email not found")
-            } else {
-                toast.error(err)
-            }
-        }
+        axios.post('https://englix-server.vercel.app/user/login', { email })
+            .then(response => {
+                alert("Berhasil Mengirim E-Mail");
+                navigate('/FormLogin');
+            }).catch(err => {
+                if (err.response && err.response.data.message) {
+                    alert(err.response.data.message);
+                } else {
+                    alert("Terjadi kesalahan saat login");
+                }
+                console.log(err)
+            });
     }
 
     return (

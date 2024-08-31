@@ -8,24 +8,25 @@ export default function ResetPassword() {
     const { token } = useParams();
     const navigate = useNavigate();
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        try {
-            const resoonse = await toast.promise(
-                axios.post('https://englix-server.vercel.app/user/resetpassword', { password, token }),
-                {
-                    pending: 'Loading...',
-                    success: 'Password di ubah!',
-                    error: 'Failed to Reset Password'
+        axios.post('https://englix-server.vercel.app/user/resetpassword', { password, token })
+            .then(response => {
+                console.log(response);
+                alert("password berhasil di ubah");
+                navigate('/login');
+            })
+            .catch(err => {
+                if (err.response && err.response.status === 404) {
+                    alert("Email not found");
+                } else if (err.response && err.response.data.message) {
+                    alert(err.response.data.message); // Menampilkan pesan error dari server
+                } else {
+                    alert("Terjadi kesalahan saat mengirim email"); // Pesan default jika tidak ada pesan dari server
                 }
-            )
-            setTimeout(() => {
-                navigate("/login")
-            }, 2000)
-        } catch (error) {
-            toast.error(error)
-        }
-    }
+                console.log(err);
+            });
+    };
 
     return (
         <>
