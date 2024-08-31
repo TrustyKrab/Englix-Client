@@ -14,7 +14,7 @@ export default function ResetPassword() {
             .then(response => {
                 console.log(response);
                 alert("password berhasil di ubah");
-                navigate('/login');
+                navigate('/FormLogin');
             })
             .catch(err => {
                 if (err.response && err.response.status === 404) {
