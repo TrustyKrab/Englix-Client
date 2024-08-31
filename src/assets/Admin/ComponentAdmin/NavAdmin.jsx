@@ -8,7 +8,7 @@ const NavAdmin = ({ setDisplay }) => {
 
     const handleLogout = () => {
         localStorage.removeItem("token");
-        axios.get('https://englix-server.https://englix-server.vercel.appl.app/admin/logout')
+        axios.get('https://englix-server.app/admin/logout')
             .then(res => {
                 if (res.data.status) {
                     navigate('/adminLogin');

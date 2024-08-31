@@ -20,10 +20,9 @@ export default function FormForgotPass() {
                 }
             }).catch(err => {
                 console.log(err);
-                alert("Terjadi kesalahan, coba lagi nanti");
+                alert("Terjadi kesalahan, coba lagi nanti");
             });
     }
-
     return (
         <div className="flex flex-wrap justify-center bg-indigo-300 h-[100vh] font-main">
             <div className="w-2/5 border-2 rounded-2xl px-6 bg-white my-40 py-5">
