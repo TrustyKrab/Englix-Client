@@ -20,27 +20,63 @@ export default function SidebarK11() {
     const coba = [
         { judul: "introduction", component: MainPageK11 },
 
-        { judul: "Common Expressions 2", url: "https://www.youtube.com/embed/Iyu89WDBPIY?si=sw0O26-Lghns2_ml", description1: "Discover common expressions used in everyday conversations", description2: 'text', description3: 'ohiya' },
+        {
+            judul: "Common Expressions 2",
+            url: "https://www.youtube.com/embed/Iyu89WDBPIY?si=sw0O26-Lghns2_ml",
+            description1: 'Video ini membahas tentang "Common Expressions 2"',
+            description2: 'Pada Video Materi ini, adalah lanjutan dari "Common Exoression" di kelas 10. Pada materi ini membahas tentang pengertian dari "Common Expression", contohnya dalam kondisi tertentu, dan beberapa idioms',
+            description3: 'Diharapkan setelah menonton video ini, siswa dapat memahami dan dapat meningkatkan skill dalam bahasa Inggris'
+        },
 
         { judul: "Quiz Common Expressions 2", component: KuisM1K11 },
 
-        { judul: "Perfecting Perfect Tenses", url: "https://www.youtube.com/embed/zToi6O_k964?si=Tdn3dSJi9HXwTvag", description1: "Discover common expressions used in everyday conversations", description2: 'text', description3: 'ohiya' },
+        {
+            judul: "Perfecting Perfect Tenses",
+            url: "https://www.youtube.com/embed/zToi6O_k964?si=Tdn3dSJi9HXwTvag",
+            description1: 'Video ini menjelaskan ',
+            description2: 'text',
+            description3: 'ohiya'
+        },
 
         { judul: "Quiz Perfecting Perfect Tenses", component: KuisM2K11 },
 
-        { judul: "Passive Voice", url: "https://www.youtube.com/embed/DxILZzHKQNs?si=EWTZ-pQSljHSl-hB", description1: "Discover common expressions used in everyday conversations", description2: 'text', description3: 'ohiya' },
+        {
+            judul: "Passive Voice",
+            url: "https://www.youtube.com/embed/DxILZzHKQNs?si=EWTZ-pQSljHSl-hB",
+            description1: "Discover common expressions used in everyday conversations",
+            description2: 'text',
+            description3: 'ohiya'
+        },
 
         { judul: "Quiz Passive Voice", component: KuisM3K11 },
 
-        { judul: "Explanation Text", url: "https://www.youtube.com/embed/SfvH2-1JydQ?si=3alY1i6uROjC4EHr", description1: "Discover common expressions used in everyday conversations", description2: 'text', description3: 'ohiya' },
+        {
+            judul: "Explanation Text",
+            url: "https://www.youtube.com/embed/SfvH2-1JydQ?si=3alY1i6uROjC4EHr",
+            description1: "Discover common expressions used in everyday conversations",
+            description2: 'text',
+            description3: 'ohiya'
+        },
 
         { judul: "Quiz Explanation Text", component: KuisM4K11 },
 
-        { judul: "Exposition Textcement", url: "https://www.youtube.com/embed/nTCyw2F7ME0?si=a2tarpbmzi1-miHh", description1: "Discover common expressions used in everyday conversations", description2: 'text', description3: 'ohiya' },
+        {
+            judul: "Exposition Textcement",
+            url: "https://www.youtube.com/embed/nTCyw2F7ME0?si=a2tarpbmzi1-miHh",
+            description1: "Discover common expressions used in everyday conversations",
+            description2: 'text',
+            description3: 'ohiya'
+        },
 
         { judul: "Quiz Exposition Text", component: KuisM5K11 },
 
-        { judul: "Grammar Intermediate", url: "https://www.youtube.com/embed/-AA7svxZZv0?si=PUhFJE9XXZ4DGhCA", description1: "Discover common expressions used in everyday conversations", description2: 'text', description3: 'ohiya' },
+        {
+            judul: "Grammar Intermediate",
+            url: "https://www.youtube.com/embed/-AA7svxZZv0?si=PUhFJE9XXZ4DGhCA",
+            description1: "Discover common expressions used in everyday conversations",
+            description2: 'text',
+            description3: 'ohiya'
+        },
 
         { judul: "Quiz Grammar Intermediate", component: KuisM6K11 },
     ];

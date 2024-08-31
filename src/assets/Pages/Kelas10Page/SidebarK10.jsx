@@ -21,7 +21,7 @@ export default function SidebarK10() {
             url: "https://www.youtube.com/embed/WADirgJdrmc?si=vJHpY2Ex3lietrKT",
             description1: 'Video ini menjelaskan tentang "Basic English in Introduction".',
             description2: 'Pada video materi ini membahas mengenai Pengertian dan elemen-elemen dasar pada Bahasa Inggris. Seperti Greetings, Introduction Yourself, Asking for Personal Information, Basic Responses dan Common Phrases. Dan juga membahas tentang struktur pada Basic Sentences.',
-            description3: 'Pada video materi "Basic English in Introduction" ini diharapkan siswa dapat memahami dan memiliki keterampilan dalam konsep dalam Bahasa Inggris dan dapat memberikan pondasi untuk memahami, berbicara, membaca dan menulis dalam Bahasa Inggris.',
+            description3: 'Pada video materi "Basic English in Introduction" ini diharapkan siswa dapat memiliki keterampilan dalam konsep dalam Bahasa Inggris dan dapat memberikan pondasi untuk memahami, berbicara, membaca dan menulis dalam Bahasa Inggris.',
         },
 
         { judul: "Quiz Basic English in Introduction", component: KuisM1K10 },

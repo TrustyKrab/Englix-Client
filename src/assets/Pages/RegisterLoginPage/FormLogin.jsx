@@ -54,7 +54,6 @@ export default function FormLogin() {
                         className="border-2 mb-3 border-slate-200 rounded w-full py-2 px-3 text-gray-700 focus:outline-slate-500 focus:shadow-outline"
                         required
                     />
-
                     <label
                         htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">Password</label>
                     <input
