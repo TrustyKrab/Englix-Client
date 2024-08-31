@@ -30,38 +30,38 @@ const AdminRegister = () => {
 
     return (
         <>
-            <section>
-                <div className="h-screen w-full flex justify-center items-center">
-                    <form
-                        onSubmit={handleSubmit}
-                        className="p-4 bg-blue-300 rounded w-1/4">
-                        <h1 className="font-black text-center text-3xl mb-10">Register Admin</h1>
-                        <label htmlFor="username" className="w-full block font-bold text-xl">Username</label>
-                        <input
-                            type="text"
-                            name='username'
-                            id='username'
-                            onChange={(e) => setUsername(e.target.value)}
-                            className="bg-white w-full px-3 py-2 text-black rounded bg-opacity-90 mb-1"
-                        />
+            <section className="h-screen w-full flex justify-center items-center bg-purple-400">
+                <form
+                    onSubmit={handleSubmit}
+                    className="p-4 bg-white rounded w-4/5 sm:w-1/2 lg:w-1/3">
+                    <h1 className="font-black text-center text-3xl italic mb-10">Register Admin</h1>
+                    <label htmlFor="username" className="w-full block font-bold text-xl">Username</label>
+                    <input
+                        type="text"
+                        placeholder="Username ..."
+                        name='username'
+                        id='username'
+                        onChange={(e) => setUsername(e.target.value)}
+                        className="bg-slate-500 w-full px-3 py-2 text-white rounded bg-opacity-90 mb-1"
+                    />
 
-                        <label htmlFor="password" className="w-full block font-bold text-xl">Password</label>
-                        <input
-                            type="password"
-                            name='password'
-                            id='password'
-                            onChange={(e) => setPassword(e.target.value)}
-                            className="bg-white w-full px-3 py-2 text-black rounded bg-opacity-90"
-                        />
-                        <button
-                            type="submit"
-                            className="bg-pink-500 hover:bg-pink-600 w-full rounded text-center font-semibold text-white py-1 mt-10 lg:py-2 lg:text-xl"
-                        >
-                            Register
-                        </button>
-                    </form>
-                </div>
-            </section >
+                    <label htmlFor="password" className="w-full block font-bold text-xl">Password</label>
+                    <input
+                        type="password"
+                        placeholder="*******"
+                        name='password'
+                        id='password'
+                        onChange={(e) => setPassword(e.target.value)}
+                        className="bg-slate-500 w-full px-3 py-2 text-white rounded bg-opacity-90"
+                    />
+                    <button
+                        type="submit"
+                        className="bg-black w-full rounded text-center italic text-white py-1 mt-10 lg:py-2 lg:text-xl"
+                    >
+                        Register
+                    </button>
+                </form>
+            </section>
         </>
     )
 }
