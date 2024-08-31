@@ -137,7 +137,7 @@ function LandingPage() {
                         </div>
 
                         {/* Link Kelas */}
-                        <div className="w-full px-4 mb-12 text-slate-300 font-medium text-lg md:w-1/4">
+                        <div className="w-full px-4 mb-12 text-slate-300 font-medium text-lg md:w-1/5">
                             <h2 className="font-bold text-2xl text-white mb-4">Materi</h2>
                             <ul>
                                 <li className="mb-2">
@@ -157,7 +157,7 @@ function LandingPage() {
                         {/* Akhir Link Kelas */}
 
                         {/* Links */}
-                        <div className="w-full px-4 mb-12 text-slate-300 font-medium text-lg md:w-1/4">
+                        <div className="w-full px-4 mb-12 text-slate-300 font-medium text-lg md:w-1/5">
                             <h2 className="font-bold text-2xl text-white mb-4">Links</h2>
                             <ul>
                                 <li className="mb-2">
@@ -185,7 +185,7 @@ function LandingPage() {
                             </ul>
                         </div>
                         {/* akhir Links */}
-                        <div className="w-full px-4 mb-12 text-slate-300 font-medium text-lg md:w-1/4">
+                        <div className="w-full px-4 mb-12 text-slate-300 font-medium text-lg md:w-1/5">
                             <h2 className="font-bold text-2xl text-white mb-4">Kontak Kami</h2>
                             <ul>
                                 <li className="mb-2">
