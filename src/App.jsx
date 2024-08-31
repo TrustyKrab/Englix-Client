@@ -76,7 +76,7 @@ function App() {
         <Route path="/FormLogin" element={<FormLogin />} />
         <Route path="/FormRegister" element={<FormRegister />} />
         <Route path='/FormForgotPass' element={<FormForgotPass />} />
-        <Route path="/ResetPassword" element={<ResetPassword />} />
+        <Route path="/resetpassword/:token" element={<ResetPassword />} />
         <Route path='/LandingPage' element={<LandingPage />} />
         {/* setelah login */}
         <Route path="/HomePage" element={<HomePage />} />
