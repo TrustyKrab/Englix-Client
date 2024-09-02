@@ -1,5 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+
 import LandingPage from './assets/Pages/LandingPage/LandingPage'
 import FormLogin from './assets/Pages/RegisterLoginPage/FormLogin'
 import FormRegister from './assets/Pages/RegisterLoginPage/FormRegister'
@@ -35,6 +37,7 @@ import MateriM6K11 from './assets/Layout/Materi/Kelas11/MateriM6K11'
 import MateriM1K12 from './assets/Layout/Materi/Kelas12/MateriM1K12'
 import MateriM2K12 from './assets/Layout/Materi/Kelas12/MateriM2K12'
 import MateriM3K12 from './assets/Layout/Materi/Kelas12/MateriM3K12'
+import MateriM4K12 from './assets/Layout/Materi/Kelas12/MateriM4K12'
 import MainPageK12 from './assets/Pages/Kelas12Page/MainPageK12'
 
 
@@ -64,7 +67,6 @@ import MainAdmin from './assets/Admin/MainAdmin';
 import ViewUser from './assets/Admin/PageAdmin/ViewUser';
 import AdminLogin from './assets/Admin/PageAdmin/AdminLogin';
 import AdminRegister from './assets/Admin/PageAdmin/AdminRegister'
-import MateriM4K12 from './assets/Layout/Materi/Kelas12/MateriM4K12'
 import ResetPassword from './assets/Pages/RegisterLoginPage/ResetPassword'
 
 function App() {
