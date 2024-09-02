@@ -5,7 +5,7 @@ export default function MateriM4K10() {
     return (
         <div className='bg-blue-100 font-main py-12'>
             <NavbarHome />
-            <div className='py-5 px-7 mx-80 justify-center rounded-3xl bg-pink-500 text-black'>
+            <div className='py-5 px-5 mx-60 mt-20 justify-center rounded-3xl bg-pink-500 text-black'>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
                     <h1 className='font-semibold text-xl'>Video ini menjelaskan tentang <span className='font-bold text-2xl'>"Basic English in Introduction"</span></h1>
                 </div>
