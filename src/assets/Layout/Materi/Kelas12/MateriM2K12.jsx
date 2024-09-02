@@ -17,19 +17,20 @@ export default function MateriM2K12() {
                     <p className='font-semibold text-md'>Pada video materi <span className='text-lg'>"Basic English in Introduction"</span> ini membahas mengenai Pengertian dan elemen-elemen dasar pada Bahasa Inggris. Seperti Greetings, Introduction Yourself, Asking for Personal Information, Basic Responses dan Common Phrases. Dan juga membahas tentang struktur pada Basic Sentences.</p>
                 </div>
             </div>
-            <div className='mx-auto flex justify-center items-center py-14'></div>
-            <div>
-                <iframe
-                    width="885"
-                    height="500"
-                    src="https://www.youtube.com/embed/m9QVLBWEwhg?si=jKLn7m-68t2Rf_Vx"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                    className="rounded-lg flex shadow-2xl drop-shadow-2xl">
-                </iframe>
+            <div className='mx-auto flex justify-center items-center py-14'>
+                <div>
+                    <iframe
+                        width="885"
+                        height="500"
+                        src="https://www.youtube.com/embed/m9QVLBWEwhg?si=jKLn7m-68t2Rf_Vx"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                        className="rounded-2xl flex shadow-2xl drop-shadow-2xl">
+                    </iframe>
+                </div>
             </div>
         </div>
     )
