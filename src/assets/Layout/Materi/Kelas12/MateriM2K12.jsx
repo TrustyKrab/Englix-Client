@@ -17,6 +17,7 @@ export default function MateriM2K12() {
                     <p className='font-semibold text-md'>Pada video materi <span className='text-lg'>"Basic English in Introduction"</span> ini membahas mengenai Pengertian dan elemen-elemen dasar pada Bahasa Inggris. Seperti Greetings, Introduction Yourself, Asking for Personal Information, Basic Responses dan Common Phrases. Dan juga membahas tentang struktur pada Basic Sentences.</p>
                 </div>
             </div>
+            <div className='mx-auto flex justify-center items-center py-14'></div>
             <div>
                 <iframe
                     width="885"
