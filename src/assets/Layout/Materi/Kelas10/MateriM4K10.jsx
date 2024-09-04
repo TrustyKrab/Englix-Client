@@ -7,7 +7,7 @@ export default function MateriM4K10() {
             <NavbarHome />
             <div className='py-5 px-5 mx-60 mt-20 justify-center rounded-3xl bg-pink-500 text-black'>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <h1 className='font-bold text-3xl text-justify'>Past Tense</h1>
+                    <h1 className='font-bold text-3xl text-center'>Past Tense</h1>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
                     <p className='font-semibold text-md text-justify'>Bentuk kata kerja yang digunakan untuk menyatakan bahwa sebuah aksi atau kejadian telah terjadi di masa lalu. Dalam bahasa Inggris, past tense digunakan untuk menggambarkan tindakan atau situasi yang sudah selesai terjadi pada waktu yang telah berlalu.</p>
