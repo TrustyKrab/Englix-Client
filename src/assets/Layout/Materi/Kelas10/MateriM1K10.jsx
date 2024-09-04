@@ -7,11 +7,11 @@ export default function MateriM1K10() {
             <NavbarHome />
             <div className='py-5 px-5 mx-60 mt-20 justify-center rounded-3xl bg-pink-500 text-black'>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <h1 className='font-semibold text-2xl text-center'>Basic English in Introduction</h1>
+                    <h1 className='font-bold text-2xl text-center'>Basic English in Introduction</h1>
                 </div>
 
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <p className='font-semibold text-md'>Pada video materi ini diharapkan siswa dapat memahami dan memiliki keterampilan dalam konsep dalam Bahasa Inggris. Dan dapat memberikan pondasi untuk memahami, berbicara, membaca dan menulis dalam Bahasa Inggris.</p>
+                    <p className='font-semibold text-md'>mengacu pada keterampilan dan konsep dasar dalam bahasa Inggris yang penting untuk dipelajari oleh pemula. Dasar-dasar ini memberikan fondasi untuk memahami, berbicara, membaca, dan menulis dalam bahasa Inggris.</p>
                 </div>
 
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl'>
