@@ -28,6 +28,7 @@ const MainAdmin = () => {
                 {display === 'home' && <Home />}
                 {display === 'user-acout' && <DataUser />}
                 {display === 'user-actifity' && <UserActifity />}
+                {display === 'Admin-Quiz' && <QuizAdmin />}
             </div>
         </>
     )

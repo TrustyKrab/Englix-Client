@@ -51,7 +51,7 @@ const NavAdmin = ({ setDisplay }) => {
                             User Activity
                         </li>
                         <li
-                            onClick={() => handleItemClick('user-actifity')}
+                            onClick={() => handleItemClick('AdminQuiz')}
                             className={`font-bold cursor-pointer ${activeItem === 'user-actifity' ? 'text-pink-500' : 'text-white'
                                 } hover:text-pink-500`}
                         >
