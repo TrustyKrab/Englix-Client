@@ -52,7 +52,7 @@ const NavAdmin = ({ setDisplay }) => {
                         </li>
                         <li
                             onClick={() => handleItemClick('Admin-Quiz')}
-                            className={`font-bold cursor-pointer ${activeItem === 'user-actifity' ? 'text-pink-500' : 'text-white'
+                            className={`font-bold cursor-pointer ${activeItem === 'Admin-Quiz' ? 'text-pink-500' : 'text-white'
                                 } hover:text-pink-500`}
                         >
                             Quiz
