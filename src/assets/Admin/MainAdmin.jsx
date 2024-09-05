@@ -1,6 +1,7 @@
 import Home from "./PageAdmin/Home"
 import DataUser from "./PageAdmin/DataUser"
 import UserActifity from "./PageAdmin/UserActifity"
+import AdminQuiz from "./PageAdmin/AdminQuiz"
 import NavAdmin from "./ComponentAdmin/NavAdmin"
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
