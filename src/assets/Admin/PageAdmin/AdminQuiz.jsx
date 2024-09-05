@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const QuizAdmin = () => {
+const AdminQuiz = () => {
     const [selectedClass, setSelectedClass] = useState('Kelas 10');
     const [quizzes, setQuizzes] = useState([
         {
@@ -99,4 +99,4 @@ const QuizAdmin = () => {
     );
 };
 
-export default QuizAdmin;
+export default AdminQuiz;
