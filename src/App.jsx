@@ -68,6 +68,7 @@ import ViewUser from './assets/Admin/PageAdmin/ViewUser';
 import AdminLogin from './assets/Admin/PageAdmin/AdminLogin';
 import AdminRegister from './assets/Admin/PageAdmin/AdminRegister'
 import ResetPassword from './assets/Pages/RegisterLoginPage/ResetPassword'
+import AdminQuiz from './assets/Admin/PageAdmin/AdminQuiz'
 
 function App() {
   return (
@@ -142,6 +143,8 @@ function App() {
         <Route path="/adminRegister" element={<AdminRegister />} />
         <Route path="/adminLogin" element={<AdminLogin />} />
         <Route path="/admin/viewuser/:id" element={<ViewUser />} />
+        <Route path="/admin/edituser/:id" element={<EditUser />} />
+        <Route path='/AdminQuiz' element={<AdminQuiz />} />
       </Routes>
     </Router>
   )
