@@ -143,7 +143,6 @@ function App() {
         <Route path="/adminRegister" element={<AdminRegister />} />
         <Route path="/adminLogin" element={<AdminLogin />} />
         <Route path="/admin/viewuser/:id" element={<ViewUser />} />
-        <Route path="/admin/edituser/:id" element={<EditUser />} />
         <Route path='/AdminQuiz' element={<AdminQuiz />} />
       </Routes>
     </Router>
