@@ -32,7 +32,7 @@ export default function FormLogin() {
 
     return (
         <div className="flex flex-wrap justify-center px-5 sm:px-10 md:px-20 bg-indigo-300 min-h-screen font-main">
-            <div className="w-full sm:w-4/5 md:w-2/5 border-2 rounded-3xl px-5 bg-white my-10">
+            <div className="w-full sm:w-4/5 md:w-1/2 border-2 rounded-3xl px-5 bg-white my-10">
                 <div className="flex justify-center w-full my-10">
                     <img src="logo-black.png" className="w-32 sm:w-40 md:w-52"></img>
                 </div>
