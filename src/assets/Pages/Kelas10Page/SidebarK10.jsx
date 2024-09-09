@@ -58,6 +58,11 @@ export default function SidebarK10() {
         { judul: "Quiz Announcement", component: KuisM4K10 },
     ];
 
+    const handlePageChange = (judul) => {
+        setSelectedPage(judul);
+        setIsSidebarOpen(false);  // Tutup sidebar saat opsi dipilih
+    };
+
     const renderContent = () => {
         const selectedData = coba.find(data => data.judul === selectedPage);
         if (selectedData?.url) {
@@ -122,7 +127,7 @@ export default function SidebarK10() {
                     {coba.map((data, index) => (
                         <a
                             key={index}
-                            onClick={() => setSelectedPage(data.judul)}
+                            onClick={() => handlePageChange(data.judul)}
                             className={`block py-2 px-4 mb-2 border-b-2 rounded-lg hover:scale-105 transition duration-500 hover:drop-shadow-xl ${selectedPage === data.judul ? 'bg-gray-700' : 'text-white'}`}
                         >
                             {data.judul}
