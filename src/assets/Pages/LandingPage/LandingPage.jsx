@@ -113,17 +113,18 @@ function LandingPage() {
             {/* akhir why wthis section */}
 
             {/* Tujuan Section */}
-            <div id="about-us" className="flex items-center justify-center mx-32 my-32 sm:w-full">
-                <div className="bg-indigo-400 px-8 py-5 rounded-xl text-white w-1/3 justify-center hover:scale-110 transition duration-300 hover:shadow-2xl drop-shadow-2xl">
-                    <h1 className="font-bold text-3xl mb-5">Tujuan Kami</h1>
-                    <p className="text-lg">
+            <div id="about-us" className="flex flex-col md:flex-row items-center justify-center mx-5 md:mx-32 my-10 md:my-32">
+                <div className="bg-indigo-400 px-6 py-4 md:px-8 md:py-5 rounded-xl text-white w-full md:w-1/2 lg:w-1/3 justify-center hover:scale-110 transition duration-300 hover:shadow-2xl drop-shadow-2xl mb-5 md:mb-0">
+                    <h1 className="font-bold text-2xl md:text-3xl mb-4 md:mb-5">Tujuan Kami</h1>
+                    <p className="text-base md:text-lg">
                         Menjadi platform online terkemuka untuk pembelajaran bahasa Inggris dengan gratis, memberdayakan individu di seluruh dunia untuk mencapai kefasihan dan kepercayaan diri dalam berkomunikasi dalam bahasa Inggris, sehingga membuka pintu untuk peluang global.
                     </p>
                 </div>
-                <div>
-                    <img src="imgAbout1.png" />
+                <div className="w-full md:w-1/2 lg:w-1/3">
+                    <img src="imgAbout1.png" className="w-full h-auto" alt="About Us Image" />
                 </div>
             </div>
+
             {/* akhir tujuan section */}
 
             {/* Footer */}
