@@ -119,12 +119,12 @@ export default function SidebarK10() {
                 className={`fixed inset-0 top-16 md:static md:w-1/4 bg-blue-100 text-white md:bg-transparent md:h-auto overflow-y-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}`}
             >
                 <button
-                    className="md:hidden p-4 text-2xl bg-blue-500"
+                    className="md:hidden p-4 text-2xl "
                     onClick={() => setIsSidebarOpen(false)}
                 >
                     &times;
                 </button>
-                <div className="text-lg relative overflow-x-hidden px-5">
+                <div className="text-lg relative overflow-x-hidden px-5 bg-blue-500">
                     {coba.map((data, index) => (
                         <a
                             key={index}
