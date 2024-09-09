@@ -102,7 +102,7 @@ export default function SidebarK10() {
         <div className="flex flex-col md:flex-row">
             {/* Tombol Menu untuk Mobile */}
             <button
-                className="md:hidden p-4 text-2xl"
+                className="md:hidden p-4 text-2xl fixed top-4 left-4 z-50 bg-blue-500 text-white rounded"
                 onClick={() => setIsSidebarOpen(!isSidebarOpen)}
             >
                 &#9776;
@@ -110,7 +110,7 @@ export default function SidebarK10() {
 
             {/* Sidebar untuk Desktop dan Mobile */}
             <div
-                className={`fixed inset-0 top-16 md:static bg-gray-800 text-white md:bg-transparent md:w-1/4 md:h-auto overflow-y-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}`}
+                className={`fixed inset-0 top-16 md:static md:w-1/4 bg-gray-800 text-white md:bg-transparent md:h-auto overflow-y-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}`}
             >
                 <button
                     className="md:hidden p-4 text-2xl"
@@ -132,7 +132,7 @@ export default function SidebarK10() {
             </div>
 
             {/* Konten */}
-            <div className="flex-1 max-h-[84vh] pb-10 relative overflow-y-auto pt-3 px-12">
+            <div className="flex-1 max-h-[84vh] pb-10 relative overflow-y-auto pt-3 px-4 md:px-12">
                 <div className={`page ${selectedPage}`}>
                     {renderContent()}
                 </div>
