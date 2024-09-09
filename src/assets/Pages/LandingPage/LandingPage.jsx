@@ -113,7 +113,7 @@ function LandingPage() {
             {/* akhir why wthis section */}
 
             {/* Tujuan Section */}
-            <div id="about-us" className="flex items-center justify-center mx-32 my-32">
+            <div id="about-us" className="flex items-center justify-center mx-32 my-32 sm:w-full">
                 <div className="bg-indigo-400 px-8 py-5 rounded-xl text-white w-1/3 justify-center hover:scale-110 transition duration-300 hover:shadow-2xl drop-shadow-2xl">
                     <h1 className="font-bold text-3xl mb-5">Tujuan Kami</h1>
                     <p className="text-lg">
