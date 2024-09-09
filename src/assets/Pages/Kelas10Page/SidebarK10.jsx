@@ -116,7 +116,7 @@ export default function SidebarK10() {
 
             {/* Sidebar untuk Desktop dan Mobile */}
             <div
-                className={`fixed inset-0 top-16 md:static md:w-1/4 bg-pink-500 text-white md:bg-transparent md:h-auto overflow-y-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}`}
+                className={`fixed inset-0 top-16 md:static md:w-1/4 bg-blue-500 text-white md:bg-transparent md:h-auto overflow-y-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}`}
             >
                 <button
                     className="md:hidden p-4 text-2xl"
