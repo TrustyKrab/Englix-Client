@@ -24,7 +24,7 @@ export default function FormForgotPass() {
             });
     }
     return (
-        <div className="flex flex-wrap justify-center bg-indigo-300 min-h-screen font-main">
+        <div className="flex flex-wrap justify-center bg-indigo-300 font-main">
             <div className="w-full sm:w-1/2 md:w-2/5 border-2 rounded-2xl px-5 sm:px-6 bg-white my-20 sm:my-96 sm:mx-10 py-5">
                 <div className="mb-5">
                     <h1 className="text-center text-lg sm:text-xl font-semibold">Masukan E-mail anda.</h1>
