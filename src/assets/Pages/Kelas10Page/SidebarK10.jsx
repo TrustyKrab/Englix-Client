@@ -124,7 +124,7 @@ export default function SidebarK10() {
                 >
                     &times;
                 </button>
-                <div className="text-lg relative overflow-x-hidden px-5 bg-blue-500">
+                <div className="text-lg relative overflow-x-hidden px-5">
                     {coba.map((data, index) => (
                         <a
                             key={index}
