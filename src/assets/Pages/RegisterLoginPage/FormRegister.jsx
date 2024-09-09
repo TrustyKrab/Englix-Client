@@ -39,85 +39,77 @@ export default function FormRegister() {
             });
     }
     return (
-        <div className="flex flex-wrap justify-center px-20 bg-indigo-300 h-full font-main">
-            <div className="w-2/5 border-2 rounded-3xl px-5 bg-white my-10">
+        <div className="flex flex-wrap justify-center px-5 sm:px-10 md:px-20 bg-indigo-300 min-h-screen font-main">
+            <div className="w-full sm:w-4/5 md:w-2/5 border-2 rounded-3xl px-5 bg-white my-10">
                 <div className="flex justify-center w-full my-10">
-                    <img src="logo-black.png" className="justify-center w-52"></img>
+                    <img src="logo-black.png" className="w-32 sm:w-40 md:w-52" alt="Logo"></img>
                 </div>
-                <div className="mb-14">
-                    <h1 className="text-center">SELAMAT DATANG</h1>
+                <div className="mb-10 sm:mb-14">
+                    <h1 className="text-center text-lg sm:text-xl md:text-2xl">SELAMAT DATANG</h1>
                 </div>
-                <form onSubmit={handleSubmit} className="mb-12">
+                <form onSubmit={handleSubmit} className="mb-8 sm:mb-12">
                     <label
-                        htmlFor="username" className="block  text-gray-700 text-sm font-bold mb-2"> Username</label>
+                        htmlFor="username" className="block text-gray-700 text-sm font-bold mb-2">Username</label>
                     <input
                         type="text"
                         name="username"
                         id="username"
-                        placeholder=""
                         onChange={(e) => setUsername(e.target.value)}
                         className="border-2 mb-3 border-slate-200 rounded w-full py-2 px-3 text-gray-700 focus:outline-slate-500 focus:shadow-outline"
                         required
                     />
 
                     <label
-                        htmlFor="email" className="block  text-gray-700 text-sm font-bold mb-2"> Email</label>
+                        htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">Email</label>
                     <input
                         type="email"
                         onChange={(e) => setEmail(e.target.value)}
                         name="email"
                         id="email"
-                        placeholder=""
                         className="border-2 mb-3 border-slate-200 rounded w-full py-2 px-3 text-gray-700 focus:outline-slate-500 focus:shadow-outline"
                         required
                     />
 
                     <label
-                        htmlFor="notlp" className="block  text-gray-700 text-sm font-bold mb-2"> No. Telpon</label>
+                        htmlFor="notlp" className="block text-gray-700 text-sm font-bold mb-2">No. Telpon</label>
                     <input
                         type="tel"
                         name="notlp"
                         id="notlp"
-                        placeholder=""
                         onChange={(e) => setNotlp(e.target.value)}
                         className="border-2 mb-3 border-slate-200 rounded w-full py-2 px-3 text-gray-700 focus:outline-slate-500 focus:shadow-outline"
                         required
                     />
 
                     <label
-                        htmlFor="password" className="block  text-gray-700 text-sm font-bold mb-2"> Password</label>
+                        htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">Password</label>
                     <input
                         type="password"
                         name="password"
                         id="password"
-                        placeholder=""
                         onChange={(e) => setPassword(e.target.value)}
-                        className="border-2 mb-12 border-slate-200 rounded w-full py-2 px-3 text-gray-700 focus:outline-slate-500 focus:shadow-outline"
+                        className="border-2 mb-8 sm:mb-12 border-slate-200 rounded w-full py-2 px-3 text-gray-700 focus:outline-slate-500 focus:shadow-outline"
                         required
                     />
 
                     <div className="text-center mb-5">
-                        <button type="submit" className="py-2 px-4 rounded-lg text-white hover:bg-blue-500 hover:scale-105 transition duration-200 drop-shadow-2xl bg-pink-500">DAFTAR</button>
+                        <button type="submit" className="py-2 px-4 rounded-lg text-white bg-pink-500 hover:bg-blue-500 hover:scale-105 transition duration-200 drop-shadow-2xl">DAFTAR</button>
                     </div>
-                    <div className='flex text-center justify-center'>
-                        <Link to='/LandingPage'>
-                            <h1 className="hover:underline">kembali</h1>
+                    <div className="flex justify-center">
+                        <Link to="/LandingPage">
+                            <h1 className="hover:underline">Kembali</h1>
                         </Link>
                     </div>
                 </form>
-                <div>
-
-                    <div className="text-center mb-2">
-                        <h1 className="text-sm">Sudah punya akun?
-                            <Link to="/FormLogin">
-                                <span className="font-medium text-indigo-600 hover:text-pink-600 ">
-                                    MASUK
-                                </span>
-                            </Link>
-                        </h1>
-                    </div>
+                <div className="text-center mb-2">
+                    <h1 className="text-sm">Sudah punya akun?
+                        <Link to="/FormLogin">
+                            <span className="font-medium text-indigo-600 hover:text-pink-600"> MASUK</span>
+                        </Link>
+                    </h1>
                 </div>
             </div>
         </div>
+
     )
 }
