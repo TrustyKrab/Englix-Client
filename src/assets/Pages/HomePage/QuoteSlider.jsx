@@ -11,8 +11,6 @@ const data = [
     { img: 'carouImg5.png' },
 ];
 
-
-
 export default function QuoteSlider() {
     const settings = {
         arrows: false,

@@ -98,7 +98,7 @@ function LandingPage() {
                         {ServiceData.map((data, index) => {
                             return (
                                 <div key={index}>
-                                    <div data-aos="fade-up" data-aos-delay={data.aosDelay} className="min-h-[180px] flex flex-col justify-center items-center rounded-xl bg-pink-500 backdrop-blur-sm  text-white text-center text-2xl py-8 px-3 w-full lg:w-[300px] mx-auto hover:scale-110 transition duration-300 hover:shadow-2xl drop-shadow-2xl ">
+                                    <div data-aos="fade-up" className="min-h-[180px] flex flex-col justify-center items-center rounded-xl bg-pink-500 backdrop-blur-sm  text-white text-center text-2xl py-8 px-3 w-full lg:w-[300px] mx-auto hover:scale-110 transition duration-300 hover:shadow-2xl drop-shadow-2xl ">
                                         {data.icon}
                                         <h1 className="mb-3 text-2xl">{data.title}</h1>
                                         <p>{data.content}</p>

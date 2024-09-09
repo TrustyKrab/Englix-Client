@@ -59,7 +59,6 @@ export default function KuisM1K10() {
             });
         }
     };
-
     const reset = () => {
         setIndex(0);
         setQuestion(dataM1K10[0]);

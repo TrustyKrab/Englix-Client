@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import Label from "./Label";
-import Input from "./Input";
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import { jwtDecode } from "jwt-decode";
@@ -79,9 +77,7 @@ export default function FormLogin() {
                         </Link>
                     </div>
                 </form>
-
                 <div>
-
                     <div className="text-center mb-2">
                         <h1 className="text-sm">Belum punya akun?
                             <Link to="/FormRegister">

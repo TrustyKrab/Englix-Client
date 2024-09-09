@@ -19,9 +19,9 @@ export default function SidebarK10() {
         {
             judul: "Basic English in Introduction",
             url: "https://www.youtube.com/embed/WADirgJdrmc?si=vJHpY2Ex3lietrKT",
-            description1: 'Video ini menjelaskan tentang "Basic English in Introduction".',
+            description1: 'Basic English in Introduction.',
             description2: 'Pada video materi ini membahas mengenai Pengertian dan elemen-elemen dasar pada Bahasa Inggris. Seperti Greetings, Introduction Yourself, Asking for Personal Information, Basic Responses dan Common Phrases. Dan juga membahas tentang struktur pada Basic Sentences.',
-            description3: 'Pada video materi "Basic English in Introduction" ini diharapkan siswa dapat memiliki keterampilan dalam konsep dalam Bahasa Inggris dan dapat memberikan pondasi untuk memahami, berbicara, membaca dan menulis dalam Bahasa Inggris.',
+            description3: 'PMateri yang akan dipelajari di video adalah elemen-elemen dasar dalam introduction. seperti saat Greetings, Introducing Yourself, Asking for Personal Information, Basic Responses, Common Phrases dan membahas struktur dari Basic Sentences.',
         },
 
         { judul: "Quiz Basic English in Introduction", component: KuisM1K10 },
@@ -29,9 +29,9 @@ export default function SidebarK10() {
         {
             judul: "Common Expressions",
             url: "https://www.youtube.com/embed/W0WSj_Azyxg?si=erye6uN5eF5c0v3n",
-            description1: 'Video ini menjelaskan tentang "Common Expression".',
-            description2: 'Pada video ini menjelaskan tentang apa saja yang akan di pelajari di dalam materi dan memberikan contohnya "Common Expressions" seperti Greetins, Asking How Someone Is, Responding To How are You, Introducing Yourself, Saying Goodbye, Apologizing, Thanking, Asking for Help, Giving Directions, Making Requests',
-            description3: 'Di harapkan setelah menonton video materi "Common Expression" ini, siswa dapat memahami dan memiliki keterampilan dalam bahasa Inggris.'
+            description1: 'Common Expressions',
+            description2: 'Frasa atau ungkapan yang sering digunakan dalam komunikasi sehari-hari oleh penutur asli suatu bahasa.',
+            description3: 'Materi yang akan dipelajari pada video adalah contoh dari penggunaan Common Expressions. Common Expressions digunakan pada saat Greetings, saat Asking How Someone Is, saat Responding to How Are You, saat Introducing Yourself, saat Saying Goodbye, saat Apologizing, saat Thanking, saaat Asking for Help, saat Giving Directions dan di saat Making Request.'
         },
 
         { judul: "Quiz Common Expressions", component: KuisM2K10 },
@@ -49,9 +49,9 @@ export default function SidebarK10() {
         {
             judul: "Announcement",
             url: "https://www.youtube.com/embed/83inl1XnW-I?si=Cgk5geyZ9ohZUOH7",
-            description1: 'Video ini membahas tentang "Announcement".',
-            description2: 'Pada video ini membahas mengenai pengertian, struktur dan contoh dari "Announcement"',
-            description3: 'setelah ini di harapkan siswa dapat mengerti dan memahami struktur tentang "Announcement" dan dapat membuat dan mengidentifikasinya.'
+            description1: 'Past Tense',
+            description2: 'Bentuk kata kerja yang digunakan untuk menyatakan bahwa sebuah aksi atau kejadian telah terjadi di masa lalu. Dalam bahasa Inggris, past tense digunakan untuk menggambarkan tindakan atau situasi yang sudah selesai terjadi pada waktu yang telah berlalu"',
+            description3: 'Materi yang akan dipelajari pada video kali ini adalah jenis-jenis yang ada di Past Tense. Seperti Simple Past Tense, Past Continuous Tense, Past Perfect Tense, Past Perfect Continuous Tense dan kapan menggunakan Past Tense.'
         },
 
         { judul: "Quiz Announcement", component: KuisM4K10 },
