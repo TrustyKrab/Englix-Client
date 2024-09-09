@@ -10,10 +10,10 @@ export default function MateriM2K10() {
                     <h1 className='font-bold text-3xl text-center'>Common Expressions</h1>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <p className='font-semibold text-md text-justify'>Frasa atau ungkapan yang sering digunakan dalam komunikasi sehari-hari oleh penutur asli suatu bahasa.</p>
+                    <p className='font-semibold text-md text-center'>Frasa atau ungkapan yang sering digunakan dalam komunikasi sehari-hari oleh penutur asli suatu bahasa.</p>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl'>
-                    <p className='font-semibold text-md text-justify'>Materi yang akan dipelajari pada video adalah contoh dari penggunaan Common Expressions. Common Expressions digunakan pada saat Greetings, saat Asking How Someone Is, saat Responding to How Are You, saat Introducing Yourself, saat Saying Goodbye, saat Apologizing, saat Thanking, saaat Asking for Help, saat Giving Directions dan di saat Making Request. </p>
+                    <p className='font-semibold text-md text-center'>Materi yang akan dipelajari pada video adalah contoh dari penggunaan Common Expressions. Common Expressions digunakan pada saat Greetings, saat Asking How Someone Is, saat Responding to How Are You, saat Introducing Yourself, saat Saying Goodbye, saat Apologizing, saat Thanking, saaat Asking for Help, saat Giving Directions dan di saat Making Request. </p>
                 </div>
             </div>
             <div className='mx-auto flex justify-center items-center py-14'>

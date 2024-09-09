@@ -11,11 +11,11 @@ export default function MateriM1K10() {
                 </div>
 
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <p className='font-semibold text-md text-justify'>Mengacu pada keterampilan dan konsep dasar dalam bahasa Inggris yang penting untuk dipelajari oleh pemula. Dasar-dasar ini memberikan fondasi untuk memahami, berbicara, membaca, dan menulis dalam bahasa Inggris.</p>
+                    <p className='font-semibold text-md text-center'>Mengacu pada keterampilan dan konsep dasar dalam bahasa Inggris yang penting untuk dipelajari oleh pemula. Dasar-dasar ini memberikan fondasi untuk memahami, berbicara, membaca, dan menulis dalam bahasa Inggris.</p>
                 </div>
 
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl'>
-                    <p className='font-semibold text-md text-justify'> Materi yang akan dipelajari di video adalah elemen-elemen dasar dalam introduction. seperti saat Greetings, Introducing Yourself, Asking for Personal Information, Basic Responses, Common Phrases dan membahas struktur dari Basic Sentences.</p>
+                    <p className='font-semibold text-md text-center'> Materi yang akan dipelajari di video adalah elemen-elemen dasar dalam introduction. seperti saat Greetings, Introducing Yourself, Asking for Personal Information, Basic Responses, Common Phrases dan membahas struktur dari Basic Sentences.</p>
                 </div>
             </div>
             <div className='mx-auto flex justify-center items-center py-14'>
