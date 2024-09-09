@@ -13,7 +13,7 @@ export default function MateriM2K11() {
                     <p className='font-semibold text-md text-center'>Pendekatan untuk memahami dan menggunakan tenses perfect dalam bahasa Inggris dengan tepat. Tenses ini mencakup Present Perfect, Past Perfect, dan Future Perfect. Masing-masing tense digunakan untuk menggambarkan tindakan atau keadaan yang terjadi dalam hubungan waktu tertentu.</p>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl'>
-                    <p className='font-semibold text-md text-center'>Materi yang akan dipelajari pada video kali ini adalah contoh-contoh tense, penggunaan tense dan struktur dari tense. </p>
+                    <p className='font-semibold text-md text-center'>Materi yang akan dipelajari pada video kali ini adalah contoh-contoh tense, penggunaan tense dan struktur dari tense.</p>
                 </div>
             </div>
             <div className='mx-auto flex justify-center items-center py-14'>

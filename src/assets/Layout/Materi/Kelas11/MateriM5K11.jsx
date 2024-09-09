@@ -10,7 +10,7 @@ export default function MateriM5K11() {
                     <h1 className='font-semibold text-3xl text-center'>Exposition Text</h1>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <p className='font-semibold text-md text-center'>jenis teks yang digunakan untuk mengemukakan argumen atau pendapat dan memberikan alasan serta bukti untuk mendukungnya. Teks ini bertujuan untuk meyakinkan pembaca atau pendengar mengenai suatu topik atau posisi tertentu. Exposition text sering ditemukan dalam esai argumentatif, artikel opini, dan pidato persuasif.</p>
+                    <p className='font-semibold text-md text-center'>Jenis teks yang digunakan untuk mengemukakan argumen atau pendapat dan memberikan alasan serta bukti untuk mendukungnya. Teks ini bertujuan untuk meyakinkan pembaca atau pendengar mengenai suatu topik atau posisi tertentu. Exposition text sering ditemukan dalam esai argumentatif, artikel opini, dan pidato persuasif.</p>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl'>
                     <p className='font-semibold text-md text-center'>Materi yang akan dipelajari pada video kali ini adalah struktur dari exposition text dan contoh dari exposition text.</p>
