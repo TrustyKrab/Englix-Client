@@ -7,13 +7,13 @@ export default function MateriM3K10() {
             <NavbarHome />
             <div className='py-5 px-5 mx-60 mt-20 justify-center rounded-3xl bg-pink-500 text-black'>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <h1 className='font-semibold text-xl'>Video ini menjelaskan tentang <span className='font-bold text-2xl'>"Past Tense"</span></h1>
+                    <h1 className='font-semibold text-xl'>Announcement</h1>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <p className='font-semibold text-md'>Bentuk kata kerja yang digunakan untuk menyatakan bahwa sebuah aksi atau kejadian telah terjadi di masa lalu. Dalam bahasa Inggris, past tense digunakan untuk menggambarkan tindakan atau situasi yang sudah selesai terjadi pada waktu yang telah berlalu.</p>
+                    <p className='font-semibold text-md'>sebuah pengumuman atau pemberitahuan resmi. Ini adalah informasi penting atau berita yang disampaikan kepada publik atau kelompok tertentu, sering kali untuk memberitahukan mereka tentang sesuatu yang baru atau signifikan.</p>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl'>
-                    <p className='font-semibold text-md'>Materi yang akan dipelajari pada video kali ini adalah jenis-jenis yang ada di Past Tense. Seperti Simple Past Tense, Past Continuous Tense, Past Perfect Tense, Past Perfect Continuous Tense dan kapan menggunakan Past Tense.</p>
+                    <p className='font-semibold text-md'>Materi yang akan dipelajari pada video kali ini adalah struktur dari announcement seperti opening statement, main information, Call to Action dan closing dan juga akan mempelajari dari contoh announcement.</p>
                 </div>
             </div>
             <div className='mx-auto flex justify-center items-center py-14'>
