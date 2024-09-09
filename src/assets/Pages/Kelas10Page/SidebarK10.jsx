@@ -108,7 +108,7 @@ export default function SidebarK10() {
         <div className="flex flex-col md:flex-row">
             {/* Tombol Menu untuk Mobile */}
             <button
-                className="md:hidden p-4 text-2xl fixed top-4 left-4 z-50 bg-blue-500 text-white rounded"
+                className="md:hidden p-4 text-2xl fixed top-4 left-4 z-50 bg-pink-500 text-white rounded"
                 onClick={() => setIsSidebarOpen(!isSidebarOpen)}
             >
                 &#9776;
