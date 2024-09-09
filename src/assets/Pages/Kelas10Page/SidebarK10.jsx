@@ -129,7 +129,7 @@ export default function SidebarK10() {
                         <a
                             key={index}
                             onClick={() => handlePageChange(data.judul)}
-                            className={`block py-2 px-4 mb-2 border-b-2 rounded-lg hover:scale-105 transition duration-500 hover:drop-shadow-xl ${selectedPage === data.judul ? 'bg-gray-700' : 'text-white'}`}
+                            className={`block py-2 px-4 mb-2 border-b-2 rounded-lg hover:scale-105 transition duration-500 hover:drop-shadow-xl ${selectedPage === data.judul ? 'bg-pink-500' : 'text-white'}`}
                         >
                             {data.judul}
                         </a>
