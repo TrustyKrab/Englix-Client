@@ -7,7 +7,7 @@ export default function MateriM2K11() {
             <NavbarHome />
             <div className='py-5 px-5 mx-60 mt-20 justify-center rounded-3xl bg-pink-500 text-black'>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <h1 className='font-semibold text-xl text-center'>Perfecting Perfect Tenses</h1>
+                    <h1 className='font-semibold text-3xl text-center'>Perfecting Perfect Tenses</h1>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
                     <p className='font-semibold text-md text-center'>Pendekatan untuk memahami dan menggunakan tenses perfect dalam bahasa Inggris dengan tepat. Tenses ini mencakup Present Perfect, Past Perfect, dan Future Perfect. Masing-masing tense digunakan untuk menggambarkan tindakan atau keadaan yang terjadi dalam hubungan waktu tertentu.</p>

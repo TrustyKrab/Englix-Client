@@ -7,7 +7,7 @@ export default function MateriM1K11() {
             <NavbarHome />
             <div className='py-5 px-5 mx-60 mt-20 justify-center rounded-3xl bg-pink-500 text-black'>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <h1 className='font-semibold text-xl text-center'>Common Expressions 2</h1>
+                    <h1 className='font-semibold text-3xl text-center'>Common Expressions 2</h1>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
                     <p className='font-semibold text-md text-center'>Dalam bahasa Inggris melanjutkan pembahasan mengenai ekspresi-ekspresi umum yang sering digunakan dalam percakapan sehari-hari. Jika Common Expressions 1 mencakup frasa dasar untuk menyapa, memperkenalkan diri, dan bertanya kabar, maka Common Expressions 2 akan mencakup ekspresi yang lebih beragam dan spesifik untuk situasi berbeda.</p>
