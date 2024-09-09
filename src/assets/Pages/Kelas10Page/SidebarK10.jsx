@@ -78,7 +78,7 @@ export default function SidebarK10() {
                             </iframe>
                         </div>
                     </div>
-                    <div className='bg-pink-500 py-4 px-5 mx-20 rounded-2xl text-center'>
+                    <div className='bg-pink-500 py-4 px-5 mx-4 md:mx-20 rounded-2xl text-center'>
                         <div className='py-2 px-3 mb-5 bg-white text-black rounded-xl'>
                             <h1 className='font-bold text-2xl'>{selectedData.description1}</h1>
                         </div>
@@ -132,7 +132,7 @@ export default function SidebarK10() {
             </div>
 
             {/* Konten */}
-            <div className="flex-1 max-h-[84vh] pb-10 relative overflow-y-auto pt-3 px-4 md:px-12">
+            <div className={`flex-1 max-h-[84vh] pb-10 relative overflow-y-auto pt-3 px-4 md:px-12 transition-all duration-300 ${isSidebarOpen ? 'ml-[250px]' : 'ml-0'}`}>
                 <div className={`page ${selectedPage}`}>
                     {renderContent()}
                 </div>
