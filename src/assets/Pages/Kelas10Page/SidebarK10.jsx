@@ -69,7 +69,7 @@ export default function SidebarK10() {
             return (
                 <div className="flex flex-col items-center px-4 md:px-12">
                     <div className='my-4 flex justify-center items-center w-full'>
-                        <div className='relative w-full max-w-4xl aspect-w-16 aspect-h-9'>
+                        <div className='relative w-full max-w-screen-md aspect-w-16 aspect-h-9'>
                             <iframe
                                 src={selectedData.url}
                                 title="YouTube video player"
