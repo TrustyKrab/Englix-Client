@@ -11,6 +11,7 @@ import MainPageK10 from './MainPageK10';
 import "./SidebarK10.css";
 
 export default function SidebarK10() {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const [selectedPage, setSelectedPage] = useState('introduction');
 
     const coba = [
@@ -98,24 +99,40 @@ export default function SidebarK10() {
     };
 
     return (
-        <div className="flex ml-3">
-            <div className="w-1/4 relative h-[80vh] overflow-y-scroll py-4 pr-3 pl-2 mt-3">
-                <div className="">
-                    <div className="text-lg relative overflow-x-hidden px-5">
-                        {coba.map((data, index) => (
-                            <a
-                                key={index}
-                                onClick={() => setSelectedPage(data.judul)}
-                                className={`sidebar-item ${selectedPage === data.judul ? 'active' : ''}`}>
-                                <div className="mb-2 py-2 px-8 border-b-2 rounded-lg hover:scale-105 transition duration-500 hover:drop-shadow-xl">
-                                    {data.judul}
-                                </div>
-                            </a>
-                        ))}
-                    </div>
+        <div className="flex flex-col md:flex-row">
+            {/* Tombol Menu untuk Mobile */}
+            <button
+                className="md:hidden p-4 text-2xl"
+                onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+            >
+                &#9776;
+            </button>
+
+            {/* Sidebar untuk Desktop dan Mobile */}
+            <div
+                className={`fixed inset-0 top-16 md:static bg-gray-800 text-white md:bg-transparent md:w-1/4 md:h-auto overflow-y-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}`}
+            >
+                <button
+                    className="md:hidden p-4 text-2xl"
+                    onClick={() => setIsSidebarOpen(false)}
+                >
+                    &times;
+                </button>
+                <div className="text-lg relative overflow-x-hidden px-5">
+                    {coba.map((data, index) => (
+                        <a
+                            key={index}
+                            onClick={() => setSelectedPage(data.judul)}
+                            className={`block py-2 px-4 mb-2 border-b-2 rounded-lg hover:scale-105 transition duration-500 hover:drop-shadow-xl ${selectedPage === data.judul ? 'bg-gray-700' : 'text-white'}`}
+                        >
+                            {data.judul}
+                        </a>
+                    ))}
                 </div>
             </div>
-            <div className="w-3/4 max-h-[84vh] pb-10 relative overflow-y-auto pt-3 px-12">
+
+            {/* Konten */}
+            <div className="flex-1 max-h-[84vh] pb-10 relative overflow-y-auto pt-3 px-12">
                 <div className={`page ${selectedPage}`}>
                     {renderContent()}
                 </div>
