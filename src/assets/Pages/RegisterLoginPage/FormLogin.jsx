@@ -32,7 +32,7 @@ export default function FormLogin() {
 
     return (
         <div className="flex flex-wrap justify-center px-5 sm:px-10 md:px-20 bg-indigo-300 min-h-screen font-main">
-            <div className="w-full sm:w-4/5 md:w-1/2 border-2 rounded-3xl px-5 bg-white my-10">
+            <div className="w-full sm:w-4/5 md:w-1/2 lg:w-2/5 border-2 rounded-3xl px-5 bg-white my-10">
                 <div className="flex justify-center w-full my-10">
                     <img src="logo-black.png" className="w-32 sm:w-40 md:w-52"></img>
                 </div>
@@ -40,8 +40,7 @@ export default function FormLogin() {
                     <h1 className="text-center text-lg sm:text-xl md:text-2xl">SELAMAT DATANG KEMBALI</h1>
                 </div>
                 <form onSubmit={handleSubmit} className="mb-8 sm:mb-12">
-                    <label
-                        htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                    <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2"> Email</label>
                     <input
                         type="email"
                         onChange={(e) => setEmail(e.target.value)}
@@ -51,19 +50,18 @@ export default function FormLogin() {
                         className="border-2 mb-3 border-slate-200 rounded w-full py-2 px-3 text-gray-700 focus:outline-slate-500 focus:shadow-outline"
                         required
                     />
-                    <label
-                        htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">Password</label>
+                    <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">Password</label>
                     <input
                         type="password"
                         name="password"
                         id="password"
                         placeholder=""
                         onChange={(e) => setPassword(e.target.value)}
-                        className="border-2 mb-8 sm:mb-12 border-slate-200 rounded w-full py-2 px-3 text-gray-700 focus:outline-slate-500 focus:shadow-outline"
+                        className="border-2 mb-12 border-slate-200 rounded w-full py-2 px-3 text-gray-700 focus:outline-slate-500 focus:shadow-outline"
                         required
                     />
                     <Link to="/FormForgotPass">
-                        <div className="flex text-right justify-end -mt-8 sm:-mt-12 mb-8 sm:mb-12">
+                        <div className="flex justify-end -mt-8 sm:-mt-12 mb-8 sm:mb-12">
                             <h1 className="text-sm hover:underline hover:opacity-85 opacity-50">Lupa Password?</h1>
                         </div>
                     </Link>
