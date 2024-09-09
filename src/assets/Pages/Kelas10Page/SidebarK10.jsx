@@ -69,16 +69,18 @@ export default function SidebarK10() {
             return (
                 <div className="flex flex-col items-center px-4 md:px-12">
                     <div className='my-4 flex justify-center items-center w-full'>
-                        <div className='relative w-full max-w-screen-md aspect-w-16 aspect-h-9'>
-                            <iframe
-                                src={selectedData.url}
-                                title="YouTube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerPolicy="strict-origin-when-cross-origin"
-                                allowFullScreen
-                                className="absolute inset-0 w-full h-full rounded-2xl"
-                            />
+                        <div className='relative w-full max-w-screen-lg'>
+                            <div className='aspect-w-16 aspect-h-9'>
+                                <iframe
+                                    src={selectedData.url}
+                                    title="YouTube video player"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen
+                                    className="absolute inset-0 w-full h-full rounded-2xl"
+                                />
+                            </div>
                         </div>
                     </div>
                     <div className='bg-pink-500 py-4 px-4 md:px-8 rounded-2xl text-center'>
