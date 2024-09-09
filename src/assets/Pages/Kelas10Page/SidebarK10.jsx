@@ -68,19 +68,17 @@ export default function SidebarK10() {
         if (selectedData?.url) {
             return (
                 <div className="flex flex-col items-center px-4 md:px-12">
-                    <div className='my-4 flex justify-center items-center'>
-                        <div className='relative w-full max-w-4xl'>
+                    <div className='my-4 flex justify-center items-center w-full'>
+                        <div className='relative w-full max-w-4xl aspect-w-16 aspect-h-9'>
                             <iframe
-                                width="100%"
-                                height="315"
                                 src={selectedData.url}
                                 title="YouTube video player"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerPolicy="strict-origin-when-cross-origin"
                                 allowFullScreen
-                                className="rounded-2xl">
-                            </iframe>
+                                className="absolute inset-0 w-full h-full rounded-2xl"
+                            />
                         </div>
                     </div>
                     <div className='bg-pink-500 py-4 px-4 md:px-8 rounded-2xl text-center'>
