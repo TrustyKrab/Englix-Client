@@ -21,7 +21,7 @@ export default function SidebarK10() {
             url: "https://www.youtube.com/embed/WADirgJdrmc?si=vJHpY2Ex3lietrKT",
             description1: 'Basic English in Introduction.',
             description2: 'Pada video materi ini membahas mengenai Pengertian dan elemen-elemen dasar pada Bahasa Inggris. Seperti Greetings, Introduction Yourself, Asking for Personal Information, Basic Responses dan Common Phrases. Dan juga membahas tentang struktur pada Basic Sentences.',
-            description3: 'PMateri yang akan dipelajari di video adalah elemen-elemen dasar dalam introduction. seperti saat Greetings, Introducing Yourself, Asking for Personal Information, Basic Responses, Common Phrases dan membahas struktur dari Basic Sentences.',
+            description3: 'Materi yang akan dipelajari di video adalah elemen-elemen dasar dalam introduction. seperti saat Greetings, Introducing Yourself, Asking for Personal Information, Basic Responses, Common Phrases dan membahas struktur dari Basic Sentences.',
         },
 
         { judul: "Quiz Basic English in Introduction", component: KuisM1K10 },
@@ -39,9 +39,9 @@ export default function SidebarK10() {
         {
             judul: "Past tense",
             url: "https://www.youtube.com/embed/yNsNbkqeow0?si=WTmD4VqfYZvWZQZ7",
-            description1: 'Video ini menjelaskan tentang "Past Tense".',
-            description2: 'Pada video ini membahas tentang pengertian dan jenis-jenis Past Tense, fungsi, bentuk dan contoh dari jenis-jenis Past Tense',
-            description3: ' Diharapkan video ini bisa membantumu memahami konsep "Past Tense" dengan lebih baik dan memudahkanmu dalam belajar bahasa Inggris.'
+            description1: 'Past Tense',
+            description2: 'Bentuk kata kerja yang digunakan untuk menyatakan bahwa sebuah aksi atau kejadian telah terjadi di masa lalu. Dalam bahasa Inggris, past tense digunakan untuk menggambarkan tindakan atau situasi yang sudah selesai terjadi pada waktu yang telah berlalu.',
+            description3: 'Materi yang akan dipelajari pada video kali ini adalah jenis-jenis yang ada di Past Tense. Seperti Simple Past Tense, Past Continuous Tense, Past Perfect Tense, Past Perfect Continuous Tense dan kapan menggunakan Past Tense.'
         },
 
         { judul: "Quiz Past tense", component: KuisM3K10 },
@@ -49,9 +49,9 @@ export default function SidebarK10() {
         {
             judul: "Announcement",
             url: "https://www.youtube.com/embed/83inl1XnW-I?si=Cgk5geyZ9ohZUOH7",
-            description1: 'Past Tense',
-            description2: 'Bentuk kata kerja yang digunakan untuk menyatakan bahwa sebuah aksi atau kejadian telah terjadi di masa lalu. Dalam bahasa Inggris, past tense digunakan untuk menggambarkan tindakan atau situasi yang sudah selesai terjadi pada waktu yang telah berlalu"',
-            description3: 'Materi yang akan dipelajari pada video kali ini adalah jenis-jenis yang ada di Past Tense. Seperti Simple Past Tense, Past Continuous Tense, Past Perfect Tense, Past Perfect Continuous Tense dan kapan menggunakan Past Tense.'
+            description1: 'Announcement',
+            description2: 'sebuah pengumuman atau pemberitahuan resmi. Ini adalah informasi penting atau berita yang disampaikan kepada publik atau kelompok tertentu, sering kali untuk memberitahukan mereka tentang sesuatu yang baru atau signifikan.',
+            description3: 'Materi yang akan dipelajari pada video kali ini adalah struktur dari announcement seperti opening statement, main information, Call to Action dan closing dan juga akan mempelajari dari contoh announcement.'
         },
 
         { judul: "Quiz Announcement", component: KuisM4K10 },
