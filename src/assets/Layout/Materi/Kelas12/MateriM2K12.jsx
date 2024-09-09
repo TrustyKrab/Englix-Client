@@ -8,13 +8,13 @@ export default function MateriM2K12() {
             <NavbarHome />
             <div className='py-5 px-5 mx-60 mt-20 justify-center rounded-3xl bg-pink-500 text-black'>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <h1 className='font-semibold text-xl'>Video ini menjelaskan tentang <span className='font-bold text-2xl'>"Basic English in Introduction"</span></h1>
+                    <h1 className='font-semibold text-3xl text-center'>Conditional Sentences</h1>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <p className='font-semibold text-md'>Pada video materi ini diharapkan siswa dapat memahami dan memiliki keterampilan dalam konsep dalam Bahasa Inggris. Dan dapat memberikan pondasi untuk memahami, berbicara, membaca dan menulis dalam Bahasa Inggris.</p>
+                    <p className='font-semibold text-md text-center'>Digunakan untuk menyatakan situasi yang bergantung pada kondisi tertentu. Biasanya, conditional sentences terdiri dari dua klausa: klausa kondisi (if-clause) dan klausa utama (main clause). Ada beberapa tipe conditional sentences, masing-masing dengan struktur dan penggunaan yang berbeda.</p>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl'>
-                    <p className='font-semibold text-md'>Pada video materi <span className='text-lg'>"Basic English in Introduction"</span> ini membahas mengenai Pengertian dan elemen-elemen dasar pada Bahasa Inggris. Seperti Greetings, Introduction Yourself, Asking for Personal Information, Basic Responses dan Common Phrases. Dan juga membahas tentang struktur pada Basic Sentences.</p>
+                    <p className='font-semibold text-md text-center'>Materi yang akan dipelajari pada video kali ini adalah tipe-tipe dari Conditional Sentences seperti Zero Conditional, First Conditional, Second Conditional, Third Conditional dan Mixed Conditional.</p>
                 </div>
             </div>
             <div className='mx-auto flex justify-center items-center py-14'>
