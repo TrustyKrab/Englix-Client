@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function MainPageK10() {
     return (
-        <div className="flex flex-col items-center mt-5 px-4 sm:px-8 lg:px-16">
+        <div className="flex flex-col items-center mt-5 px-4 sm:px-8 lg:px-16 text-center">
             <div className="w-full max-w-4xl">
-                <div className="bg-white py-10 px-6 mb-10 text-center rounded-xl shadow-lg">
+                <div className="bg-white py-10 px-6 mb-10 rounded-xl shadow-lg">
                     <h1 className="font-semibold text-xl sm:text-2xl">Tentang Materi Kelas 10</h1>
                 </div>
                 <div className="bg-white px-6 py-5 mb-8 rounded-xl shadow-lg">
