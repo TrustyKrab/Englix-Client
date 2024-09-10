@@ -11,7 +11,7 @@ export default function MateriM3K12() {
                     <h1 className='font-semibold text-3xl text-center'>Indirect Speech</h1>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <p className='font-semibold text-md text-center'>Cara untuk melaporkan atau menyampaikan apa yang dikatakan oleh orang lain tanpa menggunakan kutipan langsung. Dalam indirect speech, kita mengubah kata-kata asli dari pembicara menjadi kalimat yang lebih umum. Ini sering digunakan dalam penulisan dan percakapan untuk mengkomunikasikan informasi yang disampaikan oleh orang lain.</p>
+                    <p className='font-semibold text-md text-center'>Indirect Speech adalah cara untuk melaporkan atau menyampaikan apa yang dikatakan oleh orang lain tanpa menggunakan kutipan langsung. Dalam indirect speech, kita mengubah kata-kata asli dari pembicara menjadi kalimat yang lebih umum. Ini sering digunakan dalam penulisan dan percakapan untuk mengkomunikasikan informasi yang disampaikan oleh orang lain.</p>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl'>
                     <p className='font-semibold text-md text-center'>Materi yang akan dipelajari pada video kali ini adalah struktur dan aturan pada Indirect Speech. Video kali ini juga akan membahas jenis-jenis dari Indirect Speech.</p>

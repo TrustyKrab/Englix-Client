@@ -11,7 +11,7 @@ export default function MateriM1K12() {
                     <h1 className='font-semibold text-3xl text-center'>Common Expression 3</h1>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <p className='font-semibold text-md text-center'>Merujuk pada kumpulan ekspresi umum dalam bahasa Inggris yang sering digunakan dalam percakapan sehari-hari. Ekspresi ini berguna untuk meningkatkan kemampuan komunikasi siswa dengan menggunakan frasa yang sering digunakan oleh penutur asli bahasa Inggris.</p>
+                    <p className='font-semibold text-md text-center'>Common Expression 3 merujuk pada kumpulan ekspresi umum dalam bahasa Inggris yang sering digunakan dalam percakapan sehari-hari. Ekspresi ini berguna untuk meningkatkan kemampuan komunikasi siswa dengan menggunakan frasa yang sering digunakan oleh penutur asli bahasa Inggris.</p>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl'>
                     <p className='font-semibold text-md text-center'>Materi yang akan dipelajari pada video kali ini adalah contoh-contoh yang ada pada common expression 3 ini seperti Expression for Opinions, Expressions for Agreement and Disagreement, Expressions for Giving Advice, Expressions for Making Requests, Expressions for Expressing Surprise, Expressions for Apologize, Expressions for Providing Clarification, Expressions for Giving Examples dan Expressions for Agreeing to Terms</p>

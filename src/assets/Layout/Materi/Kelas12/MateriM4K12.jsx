@@ -10,7 +10,7 @@ export default function MateriM4K12() {
                     <h1 className='font-bold text-3xl text-center'>Types of Sentences</h1>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <p className='font-semibold text-md text-center'>Mengacu pada berbagai bentuk kalimat yang digunakan untuk menyampaikan informasi dengan cara yang berbeda. Setiap jenis kalimat memiliki fungsi dan struktur khusus.</p>
+                    <p className='font-semibold text-md text-center'>Types of Sentences mengacu pada berbagai bentuk kalimat yang digunakan untuk menyampaikan informasi dengan cara yang berbeda. Setiap jenis kalimat memiliki fungsi dan struktur khusus.</p>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl'>
                     <p className='font-semibold text-md text-center'>Materi yang akan dipelajari pada video kali ini adalah jenis-jenis dari Types of Sentences seperti Declarative Sentences, Interrogative Sentences, Imperative Sentences dan Exclamatory Sentences.</p>

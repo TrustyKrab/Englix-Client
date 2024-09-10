@@ -10,7 +10,7 @@ export default function MateriM1K11() {
                     <h1 className='font-semibold text-3xl text-center'>Common Expressions 2</h1>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <p className='font-semibold text-md text-center'>Dalam bahasa Inggris melanjutkan pembahasan mengenai ekspresi-ekspresi umum yang sering digunakan dalam percakapan sehari-hari. Jika Common Expressions 1 mencakup frasa dasar untuk menyapa, memperkenalkan diri, dan bertanya kabar, maka Common Expressions 2 akan mencakup ekspresi yang lebih beragam dan spesifik untuk situasi berbeda.</p>
+                    <p className='font-semibold text-md text-center'>Common Expressions 2 dalam bahasa Inggris melanjutkan pembahasan mengenai ekspresi-ekspresi umum yang sering digunakan dalam percakapan sehari-hari. Jika Common Expressions 1 mencakup frasa dasar untuk menyapa, memperkenalkan diri, dan bertanya kabar, maka Common Expressions 2 akan mencakup ekspresi yang lebih beragam dan spesifik untuk situasi berbeda.</p>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl'>
                     <p className='font-semibold text-md text-center'>Materi yang akan dipelajari pada video kali ini adalah contoh-contoh common expressions yang digunakan dalam kondisi tertentu dan sedikit contoh dari Idioms.</p>

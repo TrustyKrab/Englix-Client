@@ -10,7 +10,7 @@ export default function MateriM3K10() {
                     <h1 className='font-semibold text-3xl text-center'>Announcement</h1>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <p className='font-semibold text-md text-center'>sebuah pengumuman atau pemberitahuan resmi. Ini adalah informasi penting atau berita yang disampaikan kepada publik atau kelompok tertentu, sering kali untuk memberitahukan mereka tentang sesuatu yang baru atau signifikan.</p>
+                    <p className='font-semibold text-md text-center'>Announcement adalah sebuah pengumuman atau pemberitahuan resmi. Ini adalah informasi penting atau berita yang disampaikan kepada publik atau kelompok tertentu, sering kali untuk memberitahukan mereka tentang sesuatu yang baru atau signifikan.</p>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl'>
                     <p className='font-semibold text-md text-center'>Materi yang akan dipelajari pada video kali ini adalah struktur dari announcement seperti opening statement, main information, Call to Action dan closing dan juga akan mempelajari dari contoh announcement.</p>

@@ -10,7 +10,7 @@ export default function MateriM4K11() {
                     <h1 className='font-semibold text-3xl text-center'>Explanation Text</h1>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <p className='font-semibold text-md text-center'>Jenis teks yang bertujuan untuk menjelaskan bagaimana atau mengapa sesuatu terjadi. Teks ini sering digunakan untuk menjelaskan proses alami, fenomena ilmiah, atau bagaimana sesuatu bekerja. Teks penjelasan biasanya ditulis dalam urutan logis atau kronologis dan sering mencakup langkah-langkah atau tahapan yang terlibat dalam proses yang sedang dijelaskan.</p>
+                    <p className='font-semibold text-md text-center'>Explanation Text adalah jenis teks yang bertujuan untuk menjelaskan bagaimana atau mengapa sesuatu terjadi. Teks ini sering digunakan untuk menjelaskan proses alami, fenomena ilmiah, atau bagaimana sesuatu bekerja. Teks penjelasan biasanya ditulis dalam urutan logis atau kronologis dan sering mencakup langkah-langkah atau tahapan yang terlibat dalam proses yang sedang dijelaskan.</p>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl'>
                     <p className='font-semibold text-md text-center'>Materi yang akan dipelajari pada video kali ini adalah struktur dari explanation text dan contoh dari explanation text.</p>

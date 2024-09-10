@@ -10,7 +10,7 @@ export default function MateriM3K11() {
                     <h1 className='font-semibold text-3xl text-center'>Passive Voice</h1>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl mb-3'>
-                    <p className='font-semibold text-md text-center'>Konstruksi kalimat di mana objek dalam kalimat aktif menjadi subjek. Pemilihan tense dalam passive voice sangat bergantung pada tense yang digunakan dalam kalimat aktif aslinya.</p>
+                    <p className='font-semibold text-md text-center'>Passive Voice adalah konstruksi kalimat di mana objek dalam kalimat aktif menjadi subjek. Pemilihan tense dalam passive voice sangat bergantung pada tense yang digunakan dalam kalimat aktif aslinya.</p>
                 </div>
                 <div className='bg-gray-100 px-5 py-3 rounded-2xl'>
                     <p className='font-semibold text-md text-center'>Materi yang akan dipelajari pada video kali ini adalah pembentukan-pembentukan pada passive voice seperti pada Present Simple, Past Simple, Future Simple, Present Continuous, Past Continuous, Present Perfect, Past Perfect dan Future Perfect </p>
