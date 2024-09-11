@@ -14,12 +14,7 @@ export default function NavbarHome() {
             >
                 <div className="mx-10 py-2 font-main">
                     <div className="flex justify-between items-center w-full">
-                        <Link to="/HomePage">
-                            {/* Logo dipindahkan ke sebelah kanan di mobile dengan justify-end */}
-                            <div className="flex justify-end sm:justify-start w-full">
-                                <img src="logoNoBackground.png" className="w-36" alt="logo"></img>
-                            </div>
-                        </Link>
+
                         <div className="text-white hidden sm:block">
                             <ul className="flex items-center ml-32 gap-6 text-xl py-4 ">
                                 <Link to="/HomePage">
@@ -44,6 +39,14 @@ export default function NavbarHome() {
                                 </Link>
                             </ul>
                         </div>
+
+                        <Link to="/HomePage">
+                            {/* Logo di sebelah kanan di mobile dan di kiri pada desktop */}
+                            <div className="flex justify-end sm:justify-start w-full">
+                                <img src="logoNoBackground.png" className="w-36" alt="logo"></img>
+                            </div>
+                        </Link>
+
                     </div>
                 </div>
             </nav>
