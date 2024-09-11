@@ -15,31 +15,28 @@ export default function NavbarHome() {
                 <div className="mx-10 py-2 font-main">
                     <div className="flex justify-between items-center w-full">
                         <Link to="/HomePage">
-                            <div>
-                                <img src="logoNoBackground.png" className="w-36"></img>
+                            {/* Logo tampil hanya di layar besar */}
+                            <div className="hidden sm:block">
+                                <img src="logoNoBackground.png" className="w-36" alt="logo"></img>
                             </div>
                         </Link>
                         <div className="text-white hidden sm:block">
                             <ul className="flex items-center ml-32 gap-6 text-xl py-4 ">
-
                                 <Link to="/HomePage">
                                     <li className="hover:text-pink-500">
                                         <a href="">Home</a>
                                     </li>
                                 </Link>
-
                                 <Link to="/MateriMain">
                                     <li className="hover:text-pink-500">
                                         <a href="">Materi</a>
                                     </li>
                                 </Link>
-
                                 <Link to="/LatihanPage">
                                     <li className="hover:text-pink-500">
                                         Latihan
                                     </li>
                                 </Link>
-
                                 <Link to={`/HomePage/Profile/${userId}`}>
                                     <li className="hover:text-pink-500">
                                         Akun
@@ -48,10 +45,8 @@ export default function NavbarHome() {
                             </ul>
                         </div>
                     </div>
-
-                </div >
-            </nav >
+                </div>
+            </nav>
         </>
     )
-
 }
