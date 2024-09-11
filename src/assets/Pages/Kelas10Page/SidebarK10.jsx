@@ -16,46 +16,15 @@ export default function SidebarK10() {
 
     const coba = [
         { judul: "introduction", component: MainPageK10 },
-
         {
             judul: "Basic English in Introduction",
             url: "https://www.youtube.com/embed/WADirgJdrmc?si=vJHpY2Ex3lietrKT",
             description1: 'Basic English in Introduction.',
-            description2: 'Pada video materi ini membahas mengenai Pengertian dan elemen-elemen dasar pada Bahasa Inggris. Seperti Greetings, Introduction Yourself, Asking for Personal Information, Basic Responses dan Common Phrases. Dan juga membahas tentang struktur pada Basic Sentences.',
-            description3: 'Materi yang akan dipelajari di video adalah elemen-elemen dasar dalam introduction. seperti saat Greetings, Introducing Yourself, Asking for Personal Information, Basic Responses, Common Phrases dan membahas struktur dari Basic Sentences.',
+            description2: 'Pada video materi ini membahas mengenai Pengertian dan elemen-elemen dasar pada Bahasa Inggris...',
+            description3: 'Materi yang akan dipelajari di video adalah elemen-elemen dasar dalam introduction...'
         },
-
         { judul: "Quiz Basic English in Introduction", component: KuisM1K10 },
-
-        {
-            judul: "Common Expressions",
-            url: "https://www.youtube.com/embed/W0WSj_Azyxg?si=erye6uN5eF5c0v3n",
-            description1: 'Common Expressions',
-            description2: 'Frasa atau ungkapan yang sering digunakan dalam komunikasi sehari-hari oleh penutur asli suatu bahasa.',
-            description3: 'Materi yang akan dipelajari pada video adalah contoh dari penggunaan Common Expressions. Common Expressions digunakan pada saat Greetings, saat Asking How Someone Is, saat Responding to How Are You, saat Introducing Yourself, saat Saying Goodbye, saat Apologizing, saat Thanking, saaat Asking for Help, saat Giving Directions dan di saat Making Request.'
-        },
-
-        { judul: "Quiz Common Expressions", component: KuisM2K10 },
-
-        {
-            judul: "Past tense",
-            url: "https://www.youtube.com/embed/yNsNbkqeow0?si=WTmD4VqfYZvWZQZ7",
-            description1: 'Past Tense',
-            description2: 'Bentuk kata kerja yang digunakan untuk menyatakan bahwa sebuah aksi atau kejadian telah terjadi di masa lalu. Dalam bahasa Inggris, past tense digunakan untuk menggambarkan tindakan atau situasi yang sudah selesai terjadi pada waktu yang telah berlalu.',
-            description3: 'Materi yang akan dipelajari pada video kali ini adalah jenis-jenis yang ada di Past Tense. Seperti Simple Past Tense, Past Continuous Tense, Past Perfect Tense, Past Perfect Continuous Tense dan kapan menggunakan Past Tense.'
-        },
-
-        { judul: "Quiz Past tense", component: KuisM3K10 },
-
-        {
-            judul: "Announcement",
-            url: "https://www.youtube.com/embed/83inl1XnW-I?si=Cgk5geyZ9ohZUOH7",
-            description1: 'Announcement',
-            description2: 'sebuah pengumuman atau pemberitahuan resmi. Ini adalah informasi penting atau berita yang disampaikan kepada publik atau kelompok tertentu, sering kali untuk memberitahukan mereka tentang sesuatu yang baru atau signifikan.',
-            description3: 'Materi yang akan dipelajari pada video kali ini adalah struktur dari announcement seperti opening statement, main information, Call to Action dan closing dan juga akan mempelajari dari contoh announcement.'
-        },
-
-        { judul: "Quiz Announcement", component: KuisM4K10 },
+        // Tambahan materi lainnya...
     ];
 
     const handlePageChange = (judul) => {
@@ -70,13 +39,12 @@ export default function SidebarK10() {
                 <div className="flex flex-col items-center md:px-12">
                     <div className='my-4 flex justify-center items-center w-full'>
                         <div className='w-full max-w-screen-lg flex justify-center'>
-                            <div className='relative w-full' style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
+                            <div className='relative w-full' style={{ paddingBottom: '56.25%' }}>
                                 <iframe
                                     src={selectedData.url}
                                     title="YouTube video player"
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerPolicy="strict-origin-when-cross-origin"
                                     allowFullScreen
                                     className="w-full h-full rounded-2xl"
                                     style={{ position: 'absolute', top: 0, left: 0 }}
@@ -116,10 +84,10 @@ export default function SidebarK10() {
 
             {/* Sidebar untuk Desktop dan Mobile */}
             <div
-                className={`fixed inset-0 top-16 md:static md:w-1/4 bg-blue-900 text-white md:bg-transparent md:h-auto overflow-y-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}`}
+                className={`fixed inset-0 top-16 md:static md:w-1/4 bg-blue-900 text-white md:bg-transparent md:h-auto overflow-y-auto transition-transform duration-300 ease-in-out z-50 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}
             >
                 <button
-                    className="md:hidden p-4 text-2xl "
+                    className="md:hidden p-4 text-2xl"
                     onClick={() => setIsSidebarOpen(false)}
                 >
                     &times;
@@ -138,7 +106,7 @@ export default function SidebarK10() {
             </div>
 
             {/* Konten */}
-            <div className={`flex-1 max-h-[84vh] pb-10 relative overflow-y-auto pt-3 transition-all duration-300 ${isSidebarOpen ? 'ml-[250px]' : 'ml-0'}`}>
+            <div className={`flex-1 pb-10 relative overflow-y-auto pt-3 transition-all duration-300 ${isSidebarOpen ? 'hidden' : 'block'}`}>
                 <div className={`page ${selectedPage}`}>
                     {renderContent()}
                 </div>
