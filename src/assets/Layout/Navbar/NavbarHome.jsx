@@ -15,8 +15,8 @@ export default function NavbarHome() {
                 <div className="mx-10 py-2 font-main">
                     <div className="flex justify-between items-center w-full">
                         <Link to="/HomePage">
-                            {/* Logo tetap berukuran sama tetapi tidak terlihat di layar mobile */}
-                            <div className="invisible sm:visible">
+                            {/* Logo dipindahkan ke sebelah kanan di mobile dengan justify-end */}
+                            <div className="flex justify-end sm:justify-start w-full">
                                 <img src="logoNoBackground.png" className="w-36" alt="logo"></img>
                             </div>
                         </Link>
