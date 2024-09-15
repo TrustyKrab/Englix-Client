@@ -16,19 +16,43 @@ export default function SidebarK11() {
     const coba = [
         { judul: "introduction", component: MainPageK12 },
 
-        { judul: "Common Expressions 3", url: "https://www.youtube.com/embed/cye0TQPksv0?si=AE3KvoTTL9q15HV7", description1: "Discover common expressions used in everyday conversations", description2: 'text', description3: 'ohiya' },
+        {
+            judul: "Common Expressions 3",
+            url: "https://www.youtube.com/embed/cye0TQPksv0?si=AE3KvoTTL9q15HV7",
+            description1: "Common Expression 3",
+            description2: 'Common Expression 3 merujuk pada kumpulan ekspresi umum dalam bahasa Inggris yang sering digunakan dalam percakapan sehari-hari. Ekspresi ini berguna untuk meningkatkan kemampuan komunikasi siswa dengan menggunakan frasa yang sering digunakan oleh penutur asli bahasa Inggris.',
+            description3: 'Materi yang akan dipelajari pada video kali ini adalah contoh-contoh yang ada pada common expression 3 ini seperti Expression for Opinions, Expressions for Agreement and Disagreement, Expressions for Giving Advice, Expressions for Making Requests, Expressions for Expressing Surprise, Expressions for Apologize, Expressions for Providing Clarification, Expressions for Giving Examples dan Expressions for Agreeing to Terms'
+        },
 
         { judul: "Quiz Common Expressions ", component: KuisM1K12 },
 
-        { judul: "Conditional Sentences", url: "https://www.youtube.com/embed/m9QVLBWEwhg?si=jKLn7m-68t2Rf_Vx", description1: "Discover common expressions used in everyday conversations", description2: 'text', description3: 'ohiya' },
+        {
+            judul: "Conditional Sentences",
+            url: "https://www.youtube.com/embed/m9QVLBWEwhg?si=jKLn7m-68t2Rf_Vx",
+            description1: "Conditional Sentences",
+            description2: 'Conditional Sentences digunakan untuk menyatakan situasi yang bergantung pada kondisi tertentu. Biasanya, conditional sentences terdiri dari dua klausa: klausa kondisi (if-clause) dan klausa utama (main clause). Ada beberapa tipe conditional sentences, masing-masing dengan struktur dan penggunaan yang berbeda.',
+            description3: 'Materi yang akan dipelajari pada video kali ini adalah tipe-tipe dari Conditional Sentences seperti Zero Conditional, First Conditional, Second Conditional, Third Conditional dan Mixed Conditional.'
+        },
 
         { judul: "Quiz Conditional Sentences", component: KuisM2K12 },
 
-        { judul: "Indirect Speech ", url: "https://www.youtube.com/embed/Xkuz49O9Kh0?si=nUlLISfi_1__Vln1", description1: "Discover common expressions used in everyday conversations", description2: 'text', description3: 'ohiya' },
+        {
+            judul: "Indirect Speech ",
+            url: "https://www.youtube.com/embed/Xkuz49O9Kh0?si=nUlLISfi_1__Vln1",
+            description1: "Indirect Speech",
+            description2: 'Indirect Speech adalah cara untuk melaporkan atau menyampaikan apa yang dikatakan oleh orang lain tanpa menggunakan kutipan langsung. Dalam indirect speech, kita mengubah kata-kata asli dari pembicara menjadi kalimat yang lebih umum. Ini sering digunakan dalam penulisan dan percakapan untuk mengkomunikasikan informasi yang disampaikan oleh orang lain.',
+            description3: 'Materi yang akan dipelajari pada video kali ini adalah struktur dan aturan pada Indirect Speech. Video kali ini juga akan membahas jenis-jenis dari Indirect Speech.'
+        },
 
         { judul: "Quiz Indirect Speech ", component: KuisM3K12 },
 
-        { judul: "Types of Sentences", url: "https://www.youtube.com/embed/PwIM-l9vOJ4?si=vHEa0zTYskRbQ_gM", description1: "Discover common expressions used in everyday conversations", description2: 'text', description3: 'ohiya' },
+        {
+            judul: "Types of Sentences",
+            url: "https://www.youtube.com/embed/PwIM-l9vOJ4?si=vHEa0zTYskRbQ_gM",
+            description1: "Types of Sentences",
+            description2: 'Types of Sentences mengacu pada berbagai bentuk kalimat yang digunakan untuk menyampaikan informasi dengan cara yang berbeda. Setiap jenis kalimat memiliki fungsi dan struktur khusus.',
+            description3: 'Materi yang akan dipelajari pada video kali ini adalah jenis-jenis dari Types of Sentences seperti Declarative Sentences, Interrogative Sentences, Imperative Sentences dan Exclamatory Sentences.'
+        },
 
         { judul: "Quiz Types of Sentences", component: KuisM4K12 },
     ];
