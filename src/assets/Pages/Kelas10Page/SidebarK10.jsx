@@ -68,7 +68,7 @@ export default function SidebarK10() {
         if (selectedData?.url) {
             return (
                 <div className="flex flex-col items-center md:px-12">
-                    <div className='my-4 flex justify-center items-center w-full'>
+                    <div className='my-2 flex justify-center items-center w-full'>
                         <div className='w-full max-w-screen-lg flex justify-center'>
                             <div className='relative w-full' style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
                                 <iframe
@@ -124,7 +124,7 @@ export default function SidebarK10() {
                 >
                     &times;
                 </button>
-                <div className="text-lg relative overflow-x-hidden px-5 py-2">
+                <div className="text-lg relative overflow-x-hidden px-10 py-2">
                     {coba.map((data, index) => (
                         <a
                             key={index}
