@@ -67,7 +67,7 @@ export default function SidebarK10() {
         const selectedData = coba.find(data => data.judul === selectedPage);
         if (selectedData?.url) {
             return (
-                <div className="flex flex-col items-center md:px-10">
+                <div className="flex flex-col items-center md:px-12">
                     <div className='my-4 flex justify-center items-center w-full'>
                         <div className='w-full max-w-screen-lg flex justify-center'>
                             <div className='relative w-full' style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
@@ -138,7 +138,7 @@ export default function SidebarK10() {
             </div>
 
             {/* Konten */}
-            <div className={`flex-1 max-h-[84vh] pb-10 relative overflow-y-auto pt-3 transition-all duration-300 ${isSidebarOpen ? 'ml-[250px]' : 'ml-0'}`}>
+            <div className={`flex-1 max-h-[84vh] pb-10 relative overflow-y-auto pt-1 transition-all duration-300 ${isSidebarOpen ? 'ml-[250px]' : 'ml-0'}`}>
                 <div className={`page ${selectedPage}`}>
                     {renderContent()}
                 </div>
