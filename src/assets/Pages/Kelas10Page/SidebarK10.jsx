@@ -147,4 +147,3 @@ export default function SidebarK10() {
         </div>
     );
 }
-x - 1
