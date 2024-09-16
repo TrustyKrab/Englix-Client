@@ -111,7 +111,7 @@ export default function SidebarK10() {
                 className="md:hidden p-4 text-2xl fixed top-4 left-4 z-50 text-white rounded"
                 onClick={() => setIsSidebarOpen(!isSidebarOpen)}
             >
-                &#9776;
+                {isSidebarOpen ? '✕' : '☰'}
             </button>
 
             {/* Sidebar untuk Desktop dan Mobile */}
