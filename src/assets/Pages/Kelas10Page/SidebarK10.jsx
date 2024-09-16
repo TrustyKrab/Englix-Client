@@ -121,7 +121,7 @@ export default function SidebarK10() {
 
             {/* Sidebar untuk Desktop dan Mobile */}
             <div
-                className={`fixed inset-0 top-16 md:static md:w-1/4 bg-white text-white md:bg-transparent md:h-auto overflow-y-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0 z-30'}`}
+                className={`fixed inset-0 top-16 md:static md:w-1/4 bg-blue-100 text-white md:bg-transparent md:h-auto overflow-y-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0 z-30'}`}
             >
                 <div className="text-lg relative overflow-y-auto px-10 py-2 h-[calc(100vh-4rem)]">
                     {coba.map((data, index) => (
