@@ -105,7 +105,7 @@ export default function SidebarK10() {
     };
 
     return (
-        <div className="flex flex-col md:flex-row">
+        <div className="relative flex flex-col md:flex-row">
             {/* Tombol Menu untuk Mobile */}
             <button
                 className="md:hidden p-4 text-2xl fixed top-4 left-4 z-50 text-white rounded"
@@ -121,9 +121,9 @@ export default function SidebarK10() {
 
             {/* Sidebar untuk Desktop dan Mobile */}
             <div
-                className={`fixed inset-0 top-16 md:static md:w-1/4 bg-blue-300 text-white md:bg-transparent md:h-auto overflow-y-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0 z-50'}`}
+                className={`fixed inset-0 top-16 md:static md:w-1/4 bg-blue-300 text-white md:bg-transparent md:h-auto overflow-y-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0 z-30'}`}
             >
-                <div className="text-lg relative overflow-x-hidden px-10 pt-10 h-[100vh]">
+                <div className="text-lg relative overflow-y-auto px-10 pt-10 h-[calc(100vh-4rem)]">
                     {coba.map((data, index) => (
                         <a
                             key={index}
