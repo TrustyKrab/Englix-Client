@@ -132,7 +132,9 @@ export default function SidebarK10() {
             </div>
 
             {/* Konten */}
-            <div className={`flex-1 max-h-[84vh] pb-10 relative overflow-y-auto transition-all duration-300 ${isSidebarOpen ? 'hidden' : 'block'}`}>
+            <div
+                className={`flex-1 max-h-[84vh] pb-10 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-64' : 'transform translate-x-0'}`}
+            >
                 <div className={`page ${selectedPage}`}>
                     {renderContent()}
                 </div>
