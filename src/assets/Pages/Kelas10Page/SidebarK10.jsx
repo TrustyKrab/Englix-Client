@@ -114,16 +114,17 @@ export default function SidebarK10() {
                 {isSidebarOpen ? '✕' : '☰'}
             </button>
 
-            {/* Overlay background pada desktop saat sidebar terbuka */}
+            {/* Overlay background pada tampilan medium dan lebih besar */}
             {isSidebarOpen && (
                 <div className="fixed inset-0 bg-black opacity-50 z-40 md:block hidden"></div>
             )}
 
-            {/* Sidebar untuk Desktop dan Mobile */}
+            {/* Sidebar untuk Desktop dan Mobile dengan scrollbar */}
             <div
-                className={`fixed inset-0 top-16 md:static md:w-1/4 bg-blue-500 text-white md:bg-transparent md:h-auto overflow-y-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0 z-50'}`}
+                className={`fixed inset-0 top-16 md:static md:w-1/4 bg-blue-500 text-white md:bg-blue-500 md:h-auto transition-transform duration-300 ease-in-out overflow-y-auto ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0 z-50'}`}
+                style={{ maxHeight: '100vh' }} // Batasan ketinggian untuk scrollbar
             >
-                <div className="text-lg relative overflow-x-hidden px-10 py-2">
+                <div className="text-lg relative px-10 py-2">
                     {coba.map((data, index) => (
                         <a
                             key={index}
@@ -136,9 +137,9 @@ export default function SidebarK10() {
                 </div>
             </div>
 
-            {/* Konten */}
+            {/* Konten dengan background pada layar medium */}
             <div
-                className={`flex-1 max-h-[84vh] pb-10 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full' : 'transform translate-x-0'}`}
+                className={`flex-1 max-h-[84vh] pb-10 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full md:ml-[25%] bg-blue-500' : 'transform translate-x-0 bg-white'}`}
             >
                 <div className={`page ${selectedPage}`}>
                     {renderContent()}
