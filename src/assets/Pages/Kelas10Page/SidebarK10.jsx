@@ -123,7 +123,7 @@ export default function SidebarK10() {
             <div
                 className={`fixed inset-0 top-16 md:static md:w-1/4 bg-blue-300 text-white md:bg-transparent md:h-auto overflow-y-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0 z-30'}`}
             >
-                <div className="text-lg relative overflow-y-auto px-10 pt-10 h-[calc(100vh-4rem)]">
+                <div className="text-lg relative overflow-y-auto px-10 py-10">
                     {coba.map((data, index) => (
                         <a
                             key={index}
