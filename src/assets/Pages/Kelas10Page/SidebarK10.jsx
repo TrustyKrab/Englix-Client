@@ -105,7 +105,7 @@ export default function SidebarK10() {
     };
 
     return (
-        <div className="relative flex flex-col h-auto w-auto md:flex-row">
+        <div className="relative flex flex-col h-[100vh] md:flex-row">
             {/* Tombol Menu untuk Mobile */}
             <button
                 className="md:hidden p-4 text-2xl fixed top-4 left-4 z-50 text-white rounded"
