@@ -116,7 +116,7 @@ export default function SidebarK10() {
 
             {/* Overlay background pada desktop saat sidebar terbuka */}
             {isSidebarOpen && (
-                <div className="fixed inset-0 bg-black opacity-50 z-40 md:block hidden"></div>
+                <div className="fixed inset-0 bg-black opacity-50 z-40 pt-10 md:block hidden"></div>
             )}
 
             {/* Sidebar untuk Desktop dan Mobile */}
