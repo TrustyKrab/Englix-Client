@@ -133,7 +133,7 @@ export default function SidebarK10() {
 
             {/* Konten */}
             <div
-                className={`flex-1 max-h-[84vh] pb-10 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform -translate-x-full' : 'transform translate-x-0'}`}
+                className={`flex-1 max-h-[84vh] pb-10 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full' : 'transform translate-x-0'}`}
             >
                 <div className={`page ${selectedPage}`}>
                     {renderContent()}
