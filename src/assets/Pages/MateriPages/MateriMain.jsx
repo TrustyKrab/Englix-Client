@@ -22,7 +22,7 @@ export default function MateriMain() {
                         <h1 className="mb-2 mx-2 font-semibold text-white">Materi Kelas 10 :</h1>
                         <div className="flex flex-wrap justify-center mt-4">
 
-                            <div className="px-2 lg:w-1/2 xl:w-1/4">
+                            <div className="px-2 lg:w-1/2 xl:w-1/4 sm:1/3">
                                 <Link to="/MateriM1K10">
                                     <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex px-3'>
