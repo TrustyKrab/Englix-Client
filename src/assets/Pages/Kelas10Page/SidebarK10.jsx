@@ -126,7 +126,7 @@ export default function SidebarK10() {
                     className="md:hidden p-4 text-2xl fixed top-4 left-4 z-50 text-white rounded"
                     onClick={() => setIsSidebarOpen(!isSidebarOpen)}
                 >
-                    {isSidebarOpen ? '✕' : 'Materi'}
+                    {isSidebarOpen ? '✕' : '<- Materi'}
                 </button>
                 <div className={`page ${selectedPage}`}>
                     {renderContent()}
