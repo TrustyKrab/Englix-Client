@@ -1,13 +1,8 @@
-import React, { useEffect, useState } from "react";
 import NavbarHome from "../../Layout/Navbar/NavbarHome";
 import QuoteSlider from "./QuoteSlider";
 import PilihKelas from "./PilihKelas";
-import { useNavigate } from "react-router-dom";
-import { Validation } from "../PageController/Validation";
 
 function Homepage() {
-
-    const { username, userId } = Validation();
 
     return (
         <div className="bg-blue-100 w-full mx-auto my-auto pb-20 font-main">
