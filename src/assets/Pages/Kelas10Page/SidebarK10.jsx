@@ -51,9 +51,6 @@ export default function SidebarK10() {
         { judul: "Quiz Announcement", component: KuisM4K10 },
     ];
 
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    const [selectedPage, setSelectedPage] = useState('introduction');
-
     const handlePageChange = (judul) => {
         setSelectedPage(judul);
         setIsSidebarOpen(false);  // Tutup sidebar saat opsi dipilih
