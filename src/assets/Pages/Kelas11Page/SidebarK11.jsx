@@ -123,7 +123,7 @@ export default function SidebarK11() {
     };
 
     return (
-        <div className="relative flex flex-col md:flex-row bg-blue-100">
+        <div className="relative flex flex-col md:flex-row bg-blue-100 mt-10">
             {/* Sidebar untuk Desktop dan Mobile */}
             <div
                 className={`fixed inset-y-0 left-0 md:static md:w-1/4 bg-blue-100 text-white md:bg-transparent md:h-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0 z-30'}`}
