@@ -123,10 +123,10 @@ export default function SidebarK11() {
     };
 
     return (
-        <div className="relative flex flex-col md:flex-row bg-blue-100 mt-10">
+        <div className="relative flex flex-col md:flex-row bg-blue-100 ">
             {/* Sidebar untuk Desktop dan Mobile */}
             <div
-                className={`fixed inset-y-0 left-0 md:static md:w-1/4 bg-blue-100 text-white md:bg-transparent md:h-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0 z-30'}`}
+                className={`fixed inset-y-0 left-0 top-4 md:static md:w-1/4 bg-blue-100 text-white md:bg-transparent md:h-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0 z-30'}`}
             >
                 <div className="text-lg relative h-[80vh] overflow-y-scroll scrollbar-thin px-10 py-14 mt-10 md:py-10 sm:py-14">
                     {coba.map((data, index) => (
