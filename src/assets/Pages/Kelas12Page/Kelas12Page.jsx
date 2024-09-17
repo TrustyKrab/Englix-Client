@@ -1,19 +1,16 @@
-import React from 'react'
-import NavbarHome from '../../Layout/Navbar/NavbarHome'
-import SidebarK12 from './SidebarK12'
+import React from 'react';
+import SidebarK12 from './SidebarK12';
+import NavbarHome from '../../Layout/Navbar/NavbarHome';
 
-function Kelas12Page() {
+export default function Kelas10Page() {
     return (
         <>
             <NavbarHome />
-            <div className="bg-blue-100 py-20 w-full font-main">
-
-                <div className="flex-1 h-[77vh] ">
+            <div className="bg-blue-100 py-20 w-full h-screen font-main flex">
+                <div className="flex-1 mt-5">
                     <SidebarK12 />
                 </div>
             </div>
         </>
-    )
+    );
 }
-
-export default Kelas12Page

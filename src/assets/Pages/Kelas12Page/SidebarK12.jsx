@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
-import MateriM1K12 from '../../Layout/Materi/Kelas12/MateriM1K12';
 import KuisM1K12 from '../../Layout/Kuis/Kelas12/KuisM1K12';
-import MateriM2K12 from '../../Layout/Materi/Kelas12/MateriM2K12';
 import KuisM2K12 from '../../Layout/Kuis/Kelas12/KuisM2K12';
-import MateriM3K12 from '../../Layout/Materi/Kelas12/MateriM3K12';
 import KuisM3K12 from '../../Layout/Kuis/Kelas12/KuisM3K12';
-import MateriM4K12 from '../../Layout/Materi/Kelas12/MateriM4K12';
 import KuisM4K12 from '../../Layout/Kuis/Kelas12/KuisM4K12';
 import MainPageK12 from './MainPageK12';
 import "./SidebarK12.css";
 
 export default function SidebarK11() {
-    const [selectedPage, setSelectedPage] = useState('introduction');
-
     const coba = [
         { judul: "introduction", component: MainPageK12 },
 
@@ -57,35 +51,44 @@ export default function SidebarK11() {
         { judul: "Quiz Types of Sentences", component: KuisM4K12 },
     ];
 
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [selectedPage, setSelectedPage] = useState('introduction');
+
+    const handlePageChange = (judul) => {
+        setSelectedPage(judul);
+        setIsSidebarOpen(false);  // Tutup sidebar saat opsi dipilih
+    };
+
     const renderContent = () => {
         const selectedData = coba.find(data => data.judul === selectedPage);
         if (selectedData?.url) {
             return (
-                <div>
-                    <div>
-                        <div className='mx-auto my-4 flex justify-center items-center'>
-                            <iframe
-                                width="885"
-                                height="500"
-                                src={selectedData.url}
-                                title="YouTube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerPolicy="strict-origin-when-cross-origin"
-                                allowFullScreen
-                                className="rounded-2xl flex mb-10">
-                            </iframe>
+                <div className="flex flex-col items-center md:px-12">
+                    <div className='my-2 flex justify-center items-center w-full'>
+                        <div className='w-full max-w-screen-lg flex justify-center'>
+                            <div className='relative w-full' style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
+                                <iframe
+                                    src={selectedData.url}
+                                    title="YouTube video player"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen
+                                    className="w-full h-full rounded-2xl"
+                                    style={{ position: 'absolute', top: 0, left: 0 }}
+                                />
+                            </div>
                         </div>
-                        <div className='bg-pink-500 py-4 px-5 mx-20 rounded-2xl text-center'>
-                            <div className='py-2 px-3 mb-5 bg-white text-black rounded-xl'>
-                                <h1 className='font-bold text-2xl'>{selectedData.description1}</h1>
-                            </div>
-                            <div className='py-2 px-3 mb-5 bg-white text-black rounded-xl'>
-                                <h1 className='font-semibold text-lg'>{selectedData.description2}</h1>
-                            </div>
-                            <div className='py-2 px-3 bg-white text-black rounded-xl'>
-                                <h1 className='font-semibold text-lg'>{selectedData.description3}</h1>
-                            </div>
+                    </div>
+                    <div className='bg-pink-500 py-4 px-4 md:px-8 rounded-2xl text-center'>
+                        <div className='py-2 px-3 mb-5 bg-white text-black rounded-xl'>
+                            <h1 className='font-bold text-lg md:text-2xl'>{selectedData.description1}</h1>
+                        </div>
+                        <div className='py-2 px-3 mb-5 bg-white text-black rounded-xl'>
+                            <h1 className='font-semibold text-sm md:text-lg'>{selectedData.description2}</h1>
+                        </div>
+                        <div className='py-2 px-3 bg-white text-black rounded-xl'>
+                            <h1 className='font-semibold text-sm md:text-lg'>{selectedData.description3}</h1>
                         </div>
                     </div>
                 </div>
@@ -98,24 +101,41 @@ export default function SidebarK11() {
     };
 
     return (
-        <div className="flex ml-3">
-            <div className="w-1/4 relative h-[80vh] overflow-y-scroll py-4 pr-3 pl-2 mt-3">
-                <div className="">
-                    <div className="text-lg relative overflow-x-hidden px-5">
-                        {coba.map((data, index) => (
-                            <a
-                                key={index}
-                                onClick={() => setSelectedPage(data.judul)}
-                                className={`sidebar-item ${selectedPage === data.judul ? 'active' : ''}`}>
-                                <div className="mb-2 py-2 px-8 border-b-2 rounded-lg hover:scale-105 transition duration-500 hover:drop-shadow-xl">
-                                    {data.judul}
-                                </div>
-                            </a>
-                        ))}
-                    </div>
+        <div className="relative flex flex-col md:flex-row bg-blue-100">
+            {/* Tombol Menu untuk Mobile */}
+            <button
+                className="md:hidden p-4 text-2xl fixed top-4 left-4 z-50 text-white rounded"
+                onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+            >
+                {isSidebarOpen ? '✕' : '☰'}
+            </button>
+
+            {/* Overlay background pada desktop saat sidebar terbuka */}
+            {isSidebarOpen && (
+                <div className="fixed inset-0 bg-black opacity-50 z-40 md:block hidden"></div>
+            )}
+
+            {/* Sidebar untuk Desktop dan Mobile */}
+            <div
+                className={`fixed inset-0 top-16 md:static md:w-1/4 bg-blue-100 text-white md:bg-transparent md:h-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0 z-30'}`}
+            >
+                <div className="text-lg relative h-[80vh] overflow-y-scroll scrollbar-thin px-10 py-10">
+                    {coba.map((data, index) => (
+                        <a
+                            key={index}
+                            onClick={() => handlePageChange(data.judul)}
+                            className={`block bg-blue-300 py-2 px-5 mb-2 border-b-2 rounded-lg hover:scale-105 transition duration-500 hover:bg-pink-300 hover:drop-shadow-xl ${selectedPage === data.judul ? 'bg-pink-500' : 'text-white'}`}
+                        >
+                            {data.judul}
+                        </a>
+                    ))}
                 </div>
             </div>
-            <div className="w-3/4 max-h-[84vh] pb-10 relative overflow-y-auto pt-3 px-12">
+
+            {/* Konten */}
+            <div
+                className={`flex-1 max-h-[84vh] pb-10 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full' : 'transform translate-x-0'}`}
+            >
                 <div className={`page ${selectedPage}`}>
                     {renderContent()}
                 </div>
