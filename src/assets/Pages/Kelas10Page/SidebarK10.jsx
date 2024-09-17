@@ -104,7 +104,7 @@ export default function SidebarK10() {
         <div className="relative flex flex-col md:flex-row bg-blue-100">
             {/* Konten */}
             <div
-                className={`flex-1 max-h-[84vh] py-10 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full' : 'transform translate-x-0'}`}
+                className={`flex-1 max-h-[84vh] py-7 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full' : 'transform translate-x-0'}`}
             >
                 <button
                     className="p-4 text-2xl fixed top-4 left-4 z-50 text-white rounded"
