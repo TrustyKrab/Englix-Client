@@ -51,6 +51,9 @@ export default function SidebarK10() {
         { judul: "Quiz Announcement", component: KuisM4K10 },
     ];
 
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [selectedPage, setSelectedPage] = useState('introduction');
+
     const handlePageChange = (judul) => {
         setSelectedPage(judul);
         setIsSidebarOpen(false);  // Tutup sidebar saat opsi dipilih
@@ -99,13 +102,20 @@ export default function SidebarK10() {
 
     return (
         <div className="relative flex flex-col md:flex-row bg-blue-100">
-            {/* Tombol Menu untuk Mobile */}
-            <button
-                className="md:hidden p-4 text-2xl fixed top-4 left-4 z-50 text-white rounded"
-                onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+            {/* Konten */}
+            <div
+                className={`flex-1 max-h-[84vh] pb-10 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full' : 'transform translate-x-0'}`}
             >
-                {isSidebarOpen ? '✕' : '☰'}
-            </button>
+                <button
+                    className="md:hidden p-4 text-2xl fixed top-4 left-4 z-50 text-white rounded"
+                    onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+                >
+                    {isSidebarOpen ? '✕' : 'Materi'}
+                </button>
+                <div className={`page ${selectedPage}`}>
+                    {renderContent()}
+                </div>
+            </div>
 
             {/* Overlay background pada desktop saat sidebar terbuka */}
             {isSidebarOpen && (
@@ -126,15 +136,6 @@ export default function SidebarK10() {
                             {data.judul}
                         </a>
                     ))}
-                </div>
-            </div>
-
-            {/* Konten */}
-            <div
-                className={`flex-1 max-h-[84vh] pb-10 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full' : 'transform translate-x-0'}`}
-            >
-                <div className={`page ${selectedPage}`}>
-                    {renderContent()}
                 </div>
             </div>
         </div>
