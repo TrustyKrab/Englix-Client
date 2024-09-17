@@ -66,7 +66,7 @@ export default function NavbarHome() {
 
             {/* Sidebar component */}
             <div
-                className={`fixed top-0 left-0 w-full h-screen bg-blue-500 text-white z-40 transition-transform duration-300 ease-in-out ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+                className={`fixed top-0 left-0 w-full h-screen bg-blue-300 text-white z-40 transition-transform duration-300 ease-in-out ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
                     }`}
             >
                 <div className="text-lg relative overflow-y-auto h-screen p-10">
