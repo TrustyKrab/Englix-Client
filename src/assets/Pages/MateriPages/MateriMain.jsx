@@ -21,8 +21,7 @@ export default function MateriMain() {
                     <div className="mx-32 pt-7 px-4 rounded-xl bg-pink-400 drop-shadow-2xl shadow-2xl">
                         <h1 className="mb-2 mx-2 font-semibold text-white">Materi Kelas 10 :</h1>
                         <div className="flex flex-wrap justify-center mt-4">
-
-                            <div className="px-2 lg:w-1/2 xl:w-1/4 sm:1/3">
+                            <div className="px-2 lg:w-1/2 xl:w-1/4 md:w-1/2 sm:w-full">
                                 <Link to="/MateriM1K10">
                                     <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex px-3'>
@@ -32,8 +31,7 @@ export default function MateriMain() {
                                     </div>
                                 </Link>
                             </div>
-
-                            <div className="px-2 lg:w-1/2 xl:w-1/4">
+                            <div className="px-2 lg:w-1/2 xl:w-1/4 md:w-1/2 sm:w-full">
                                 <Link to="/MateriM2K10">
                                     <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex px-3'>
@@ -43,8 +41,7 @@ export default function MateriMain() {
                                     </div>
                                 </Link>
                             </div>
-
-                            <div className="px-2 lg:w-1/2 xl:w-1/4">
+                            <div className="px-2 lg:w-1/2 xl:w-1/4 md:w-1/2 sm:w-full">
                                 <Link to="/MateriM4K10">
                                     <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex px-3'>
@@ -54,8 +51,7 @@ export default function MateriMain() {
                                     </div>
                                 </Link>
                             </div>
-
-                            <div className="px-2 lg:w-1/2 xl:w-1/4">
+                            <div className="px-2 lg:w-1/2 xl:w-1/4 md:w-1/2 sm:w-full">
                                 <Link to="/MateriM3K10">
                                     <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex px-3'>
@@ -65,18 +61,15 @@ export default function MateriMain() {
                                     </div>
                                 </Link>
                             </div>
-
-
                         </div>
                         <div className="mb-20"></div>
-                    </div >
+                    </div>
 
                     {/* kelas 11 */}
                     <div className="mx-32 pt-7 px-4 rounded-xl bg-pink-400 drop-shadow-2xl shadow-2xl">
                         <h1 className="mb-2 mx-2 font-semibold text-white">Materi Kelas 11 :</h1>
                         <div className="flex flex-wrap justify-center mt-4">
-
-                            <div className="px-2 lg:w-1/2 xl:w-1/4">
+                            <div className="px-2 lg:w-1/2 xl:w-1/4 md:w-1/2 sm:w-full">
                                 <Link to="/MateriM1K11">
                                     <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex px-3'>
@@ -86,8 +79,7 @@ export default function MateriMain() {
                                     </div>
                                 </Link>
                             </div>
-
-                            <div className="px-2 lg:w-1/2 xl:w-1/4">
+                            <div className="px-2 lg:w-1/2 xl:w-1/4 md:w-1/2 sm:w-full">
                                 <Link to="/MateriM2K11">
                                     <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex px-3'>
@@ -97,8 +89,7 @@ export default function MateriMain() {
                                     </div>
                                 </Link>
                             </div>
-
-                            <div className="px-2 lg:w-1/2 xl:w-1/4">
+                            <div className="px-2 lg:w-1/2 xl:w-1/4 md:w-1/2 sm:w-full">
                                 <Link to="/MateriM3K11">
                                     <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex px-3'>
@@ -108,8 +99,7 @@ export default function MateriMain() {
                                     </div>
                                 </Link>
                             </div>
-
-                            <div className="px-2 lg:w-1/2 xl:w-1/4">
+                            <div className="px-2 lg:w-1/2 xl:w-1/4 md:w-1/2 sm:w-full">
                                 <Link to="/MateriM4K11">
                                     <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex px-3'>
@@ -119,10 +109,9 @@ export default function MateriMain() {
                                     </div>
                                 </Link>
                             </div>
-
-                            <div className="px-2 lg:w-1/2 xl:w-1/4">
+                            <div className="px-2 lg:w-1/2 xl:w-1/4 md:w-1/2 sm:w-full">
                                 <Link to="/MateriM5K11">
-                                    <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
+                                    <div className="hover :bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex px-3'>
                                             <img src="CoverM5K11.png" alt="" width="w-full" className="rounded-xl" />
                                         </div>
@@ -130,8 +119,7 @@ export default function MateriMain() {
                                     </div>
                                 </Link>
                             </div>
-
-                            <div className="px-2 lg:w-1/2 xl:w-1/4">
+                            <div className="px-2 lg:w-1/2 xl:w-1/4 md:w-1/2 sm:w-full">
                                 <Link to="/MateriM6K11">
                                     <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex px-3'>
@@ -143,14 +131,13 @@ export default function MateriMain() {
                             </div>
                         </div>
                         <div className="mb-20"></div>
-                    </div >
+                    </div>
 
                     {/* kelas 12 */}
                     <div className="mx-32 pt-7 px-4 rounded-xl bg-pink-400 drop-shadow-2xl shadow-2xl">
                         <h1 className="mb-2 mx-2 font-semibold text-white">Materi Kelas 12 :</h1>
                         <div className="flex flex-wrap justify-center mt-4">
-
-                            <div className="px-2 lg:w-1/2 xl:w-1/4">
+                            <div className="px-2 lg:w-1/2 xl:w-1/4 md:w-1/2 sm:w-full">
                                 <Link to="/MateriM1K12">
                                     <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex px-3'>
@@ -160,8 +147,7 @@ export default function MateriMain() {
                                     </div>
                                 </Link>
                             </div>
-
-                            <div className="px-2 lg:w-1/2 xl:w-1/4">
+                            <div className="px-2 lg:w-1/2 xl:w-1/4 md:w-1/2 sm:w-full">
                                 <Link to="/MateriM2K12">
                                     <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex px-3'>
@@ -171,8 +157,7 @@ export default function MateriMain() {
                                     </div>
                                 </Link>
                             </div>
-
-                            <div className="px-2 lg:w-1/2 xl:w-1/4">
+                            <div className="px-2 lg:w-1/2 xl:w-1/4 md:w-1/2 sm:w-full">
                                 <Link to="/MateriM3K12">
                                     <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex px-3'>
@@ -182,8 +167,7 @@ export default function MateriMain() {
                                     </div>
                                 </Link>
                             </div>
-
-                            <div className="px-2 lg:w-1/2 xl:w-1/4">
+                            <div className="px-2 lg:w-1/2 xl:w-1/4 md:w-1/2 sm:w-full">
                                 <Link to="/MateriM4K12">
                                     <div className="hover:bg-blue-300 rounded-xl py-4 border-slate-300 mb-10 bg-white hover:text-white hover:scale-105 transition duration-200 hover:drop-shadow-xl">
                                         <div className='justify-center flex px-3'>
@@ -195,7 +179,7 @@ export default function MateriMain() {
                             </div>
                         </div>
                         <div className="mb-20"></div>
-                    </div >
+                    </div>
                 </div>
             </div>
         </div>
