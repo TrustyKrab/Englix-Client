@@ -63,7 +63,7 @@ export default function SidebarK10() {
         const selectedData = coba.find(data => data.judul === selectedPage);
         if (selectedData?.url) {
             return (
-                <div className="flex flex-col items-center md:px-12 mt-5">
+                <div className="flex flex-col items-center md:px-12">
                     <div className='my-2 flex justify-center items-center w-full'>
                         <div className='w-full max-w-screen-lg flex justify-center'>
                             <div className='relative w-full' style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
@@ -102,20 +102,13 @@ export default function SidebarK10() {
 
     return (
         <div className="relative flex flex-col md:flex-row bg-blue-100">
-            {/* Konten */}
-            <div
-                className={`flex-1 max-h-[84vh] pb-10 pt-12 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full' : 'transform translate-x-0'}`}
+            {/* Tombol Menu untuk Mobile */}
+            <button
+                className="md:hidden p-4 text-2xl fixed top-4 left-4 z-50 text-white rounded"
+                onClick={() => setIsSidebarOpen(!isSidebarOpen)}
             >
-                <button
-                    className="p-4 text-2xl fixed top-4 left-4 z-50 text-pink-500 rounded"
-                    onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-                >
-                    {isSidebarOpen ? '✕' : 'Materi'}
-                </button>
-                <div className={`page ${selectedPage}`}>
-                    {renderContent()}
-                </div>
-            </div>
+                {isSidebarOpen ? '✕' : '☰'}
+            </button>
 
             {/* Overlay background pada desktop saat sidebar terbuka */}
             {isSidebarOpen && (
@@ -136,6 +129,15 @@ export default function SidebarK10() {
                             {data.judul}
                         </a>
                     ))}
+                </div>
+            </div>
+
+            {/* Konten */}
+            <div
+                className={`flex-1 max-h-[84vh] pb-10 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full' : 'transform translate-x-0'}`}
+            >
+                <div className={`page ${selectedPage}`}>
+                    {renderContent()}
                 </div>
             </div>
         </div>
