@@ -14,7 +14,7 @@ export default function LatihanPage() {
                     <h1 className='text-center font-bold text-4xl mb-10'>Pilih Latihan</h1>
 
                     {/* Latihan Listening */}
-                    <div className="mx-32 pt-7 px-4 rounded-xl bg-pink-400 drop-shadow-2xl shadow-2xl">
+                    <div className="mx-24 pt-7 px-4 rounded-xl bg-pink-400 drop-shadow-2xl shadow-2xl">
                         <h1 className='font-semibold text-center text-xl'>Latihan Listening</h1>
                         <div className="flex flex-wrap justify-center mt-4">
                             <div className="px-2 lg:w-1/2 xl:w-1/4">
