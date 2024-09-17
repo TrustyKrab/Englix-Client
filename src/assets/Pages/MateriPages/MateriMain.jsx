@@ -18,7 +18,7 @@ export default function MateriMain() {
                     </div>
 
                     {/* kelas 10 */}
-                    <div className="mx-32 pt-7 px-4 rounded-xl bg-pink-400 drop-shadow-2xl shadow-2xl">
+                    <div className="mx-32 pt-7 px-1 rounded-xl bg-pink-400 drop-shadow-2xl shadow-2xl">
                         <h1 className="mb-2 mx-2 font-semibold text-white">Materi Kelas 10 :</h1>
                         <div className="flex flex-wrap justify-center mt-4">
                             <div className="px-2 lg:w-1/2 xl:w-1/4 md:w-1/2 sm:w-full">
