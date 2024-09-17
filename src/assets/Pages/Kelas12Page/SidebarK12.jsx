@@ -102,22 +102,9 @@ export default function SidebarK11() {
 
     return (
         <div className="relative flex flex-col md:flex-row bg-blue-100">
-            {/* Tombol Menu untuk Mobile */}
-            <button
-                className="md:hidden p-4 text-2xl fixed top-4 left-4 z-50 text-white rounded"
-                onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-            >
-                {isSidebarOpen ? '✕' : '☰'}
-            </button>
-
-            {/* Overlay background pada desktop saat sidebar terbuka */}
-            {isSidebarOpen && (
-                <div className="fixed inset-0 bg-black opacity-50 z-40 md:block hidden"></div>
-            )}
-
             {/* Sidebar untuk Desktop dan Mobile */}
             <div
-                className={`fixed inset-0 top-16 md:static md:w-1/4 bg-blue-100 text-white md:bg-transparent md:h-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0 z-30'}`}
+                className={`fixed inset-y-0 left-0 md:static md:w-1/4 bg-blue-100 text-white md:bg-transparent md:h-auto transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0 z-30'}`}
             >
                 <div className="text-lg relative h-[80vh] overflow-y-scroll scrollbar-thin px-10 py-10">
                     {coba.map((data, index) => (
@@ -134,12 +121,23 @@ export default function SidebarK11() {
 
             {/* Konten */}
             <div
-                className={`flex-1 max-h-[84vh] pb-10 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full' : 'transform translate-x-0'}`}
+                className={`flex-1 max-h-[84vh] pb-10 pt-10 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full' : 'transform translate-x-0'}`}
             >
+                <button
+                    className="md:hidden p-4 text-2xl fixed top-1 left-4 z-50 text-white rounded"
+                    onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+                >
+                    {isSidebarOpen ? '✕' : 'Materi'}
+                </button>
                 <div className={`page ${selectedPage}`}>
                     {renderContent()}
                 </div>
             </div>
+
+            {/* Overlay background pada desktop saat sidebar terbuka */}
+            {isSidebarOpen && (
+                <div className="fixed inset-0 bg-black opacity-50 z-40 md:block hidden"></div>
+            )}
         </div>
     );
 }
