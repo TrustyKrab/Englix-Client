@@ -124,7 +124,7 @@ export default function SidebarK10() {
                 className={`flex-1 max-h-[84vh] pb-10 pt-10 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full' : 'transform translate-x-0'}`}
             >
                 <button
-                    className="md:hidden p-4 text-2xl fixed top-4 left-4 z-50 text-white rounded -mb-10"
+                    className="md:hidden p-4 text-2xl fixed top-2 left-4 z-50 text-white rounded"
                     onClick={() => setIsSidebarOpen(!isSidebarOpen)}
                 >
                     {isSidebarOpen ? '✕' : 'Materi'}
