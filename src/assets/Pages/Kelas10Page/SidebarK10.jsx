@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
-import MateriM1K10 from '../../Layout/Materi/Kelas10/MateriM1K10';
 import KuisM1K10 from '../../Layout/Kuis/Kelas10/KuisM1K10';
-import MateriM2K10 from '../../Layout/Materi/Kelas10/MateriM2K10';
 import KuisM2K10 from '../../Layout/Kuis/Kelas10/KuisM2K10';
-import MateriM3K10 from '../../Layout/Materi/Kelas10/MateriM3K10';
 import KuisM3K10 from '../../Layout/Kuis/Kelas10/KuisM3K10';
-import MateriM4K10 from '../../Layout/Materi/Kelas10/MateriM4K10';
 import KuisM4K10 from '../../Layout/Kuis/Kelas10/KuisM4K10';
 import MainPageK10 from './MainPageK10';
 import "./SidebarK10.css";
