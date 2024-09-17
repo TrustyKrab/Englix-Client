@@ -85,7 +85,7 @@ export default function SidebarK11() {
         const selectedData = coba.find(data => data.judul === selectedPage);
         if (selectedData?.url) {
             return (
-                <div className="flex flex-col items-center md:px-12">
+                <div className="flex flex-col items-center md:px-12 mt-5">
                     <div className='my-2 flex justify-center items-center w-full'>
                         <div className='w-full max-w-screen-lg flex justify-center'>
                             <div className='relative w-full' style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
@@ -142,7 +142,7 @@ export default function SidebarK11() {
             </div>
             {/* Konten */}
             <div
-                className={`flex-1 max-h-[84vh] pb-10 pt-10 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full' : 'transform translate-x-0'}`}
+                className={`flex-1 max-h-[84vh] pb-10 pt-10 mt-10 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full' : 'transform translate-x-0'}`}
             >
                 <button
                     className="md:hidden p-4 text-2xl fixed top-1 left-4 z-50 text-white rounded"
