@@ -27,7 +27,7 @@ export default function NavbarHome() {
 
                         {/* Button menu for mobile devices */}
                         <button
-                            className="sm:hidden text-white text-2xl p-4 fixed top-4 right-4 z-50"
+                            className="sm:hidden text-white text-2xl p-4 fixed top-4 left-4 z-50"
                             onClick={handleSidebarToggle}
                         >
                             {isSidebarOpen ? "✕" : "☰"}
