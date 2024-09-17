@@ -69,7 +69,7 @@ export default function NavbarHome() {
                 className={`fixed top-0 left-0 w-full h-screen bg-blue-300 text-white z-40 transition-transform duration-300 ease-in-out ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
                     }`}
             >
-                <div className="text-lg relative overflow-y-auto h-screen p-10">
+                <div className="text-lg relative overflow-y-auto h-screen p-10 pt-10">
                     <ul className="flex flex-col gap-6 text-xl py-4">
                         <Link to="/HomePage">
                             <li className="hover:text-pink-500">
