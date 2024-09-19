@@ -120,10 +120,10 @@ export default function SidebarK11() {
             </div>
             {/* Konten */}
             <div
-                className={`flex-1 max-h-[84vh] pb-10 pt-10 mt-10 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full' : 'transform translate-x-0'}`}
+                className={`flex-1 max-h-[84vh] pb-10 pt-2 mt-5 relative overflow-y-auto transition-transform duration-300 ${isSidebarOpen ? 'transform translate-x-full' : 'transform translate-x-0'}`}
             >
                 <button
-                    className="md:hidden p-4 text-2xl fixed top-1 left-4 z-50 text-white rounded"
+                    className="md:hidden text-2xl -mt-2 fixed top-1 left-4 z-50 text-white rounded"
                     onClick={() => setIsSidebarOpen(!isSidebarOpen)}
                 >
                     {isSidebarOpen ? '✕' : '<-- Materi'}
