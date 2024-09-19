@@ -51,7 +51,7 @@ export default function LatihanPage() {
                     </div >
 
                     {/* Latihan Grammar */}
-                    <div className="mx-20 lg:mx-36 pt-7 px-4 rounded-xl bg-pink-400 drop-shadow-2xl shadow-2xl">
+                    <div className="mx-20 pt-7 px-4 rounded-xl bg-pink-400 drop-shadow-2xl shadow-2xl">
                         <h1 className='font-semibold text-center text-xl'>Latihan Grammar</h1>
                         <div className="flex flex-wrap justify-center mt-4">
                             <div className="px-2 lg:w-1/2 xl:w-1/4">
