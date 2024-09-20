@@ -67,7 +67,7 @@ export default function SidebarK11() {
             url: "https://www.youtube.com/embed/-AA7svxZZv0?si=PUhFJE9XXZ4DGhCA",
             description1: "Grammar Intermediate",
             description2: 'Grammar Intermediate mengacu pada tingkat keterampilan tata bahasa yang berada di antara pemula (beginner) dan lanjutan (advanced). Pada tingkat ini, pembelajar diharapkan memiliki pemahaman dasar yang baik tentang struktur bahasa dan mulai menguasai aturan tata bahasa yang lebih kompleks.',
-            description3: 'Materi yang akan dipelajari pada video kali ini adalah contoh-contoh grammar intermediate yang digunakan pada Tense, Conditional Text, Passive Voice, Modals, Relatives Clauses, Gerunds and Infinitives dan terakhir pada Comparatives and Superlatives'
+            description3: 'Materi yang akan dipelajari pada video kali ini adalah contoh-contoh grammar intermediate yang digunakan pada Tense, Conditional Text, Passive Voice, Modals, Relatives Clauses, Gerunds and Infinitives dan terakhir pada Comparatives and Superlatives.'
         },
 
         { judul: "Quiz Grammar Intermediate", component: KuisM6K11 },
