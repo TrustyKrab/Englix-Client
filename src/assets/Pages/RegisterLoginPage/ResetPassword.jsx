@@ -50,7 +50,7 @@ export default function ResetPassword() {
                             required
                         />
                         <div className="flex justify-center mb-5">
-                            <button type="submit" className="bg-pink-500 text-white text-base rounded-lg py-2 px-4 hover:bg-pink-600 hover:scale-105 transition duration-200">KIRIM LINK</button>
+                            <button type="submit" className="bg-pink-500 text-white text-base rounded-lg py-2 px-4 hover:bg-pink-600 hover:scale-105 transition duration-200">Simpan Password</button>
                         </div>
                     </form>
                 </div>
